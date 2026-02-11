@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+#using namespace std;
+
+struct Pacjent {
+    char halluxFlexus;       // 'T' = tak, 'N' = nie
+    std::string oporPalca;   // "miekko-elastyczny" lub "twardo-elastyczny"
+    char ryzykoSubluksacji;  // 'T' = tak, 'N' = nie
+};
+
+int main() {
+    Pacjent pacjent1;
+    pacjent1.halluxFlexus = 'T';
+    pacjent1.oporPalca = "twardo-elastyczny";
+    pacjent1.ryzykoSubluksacji = 'T';
+
+    // Tablica kroków do wykonania
+    std::string kroki[] = {
+        "Priorytet: ochrona stawu",
+        "Stopniowa korekcja i stretching",
+        "Zmiana wkładki / foam insert w AFO",
+        "Ocena przez ortopedę / podiatrę",
+        "Monitorowanie progresji"
+    };
+
+    for (int i = 0; i < 5; i++) {
+        std::cout << "Krok " << i+1 << ": " << kroki[i] << "\n";
+
+        if (i == 0) { // ochrona stawu
+            if (pacjent1.halluxFlexus == 'T') {
+                std::cout << "- Unikać dalszego utrwalania zgięcia I palca\n";
+                std::cout << "- Rozważyć modyfikację AFO: miękka szyna lub klin pod paluch\n";
+            }
+        }
+        else if (i == 1) { // stretching
+            if (pacjent1.oporPalca == "twardo-elastyczny") {
+                std::cout << "- Wykonywać delikatne, regularne rozciągania pasywne kilka razy dziennie po 1-2 minuty\n";
+                std::cout << "- Unikać gwałtownego prostowania\n";
+            } else {
+                std::cout << "- Rozciąganie pasywne może być łagodniejsze\n";
+            }
+        }
+        else if (i == 2) { // wkładka / klin
+            std::cout << "- Można delikatnie pogrubić wkładkę pod I palcem\n";
+            std::cout << "- Można zastosować specjalny klin w AFO ograniczający zgięcie I palca\n";
+        }
+        else if (i == 3) { // ocena ortopedyczna
