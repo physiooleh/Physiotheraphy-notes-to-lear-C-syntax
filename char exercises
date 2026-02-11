@@ -1,0 +1,10 @@
+include <iostream>
+include <string>
+using namespace std;
+
+int main() {
+    char A[10] = "Cartelle", "cliniche", "non", "e", "una", "cosa", "che", "mi", "piace", "tanto";
+
+    cout << A << endl;
+    return 0;
+}
