@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class = Activity1
+public: bool = "Spontaneously grasps objects from DH or table with AH. Releases to table using AH whem promped";
+class = Activity2
+public: bool = "Grasps objects from DH with AH to hold effectively. Releases objects from DH to AH";
+class = Activity3
+public: bool = "Does not place objects in AH or grasp objects from DH using AH. Pulls objects from AH using DH to release";
+class = Activity4
+public: bool = "No spontaneous initiation of AH in bimanual tasks";
+
+int main() {
+Activity1 a1
+Activity2 a2
+Activity3 a3
+Activity4 a4
