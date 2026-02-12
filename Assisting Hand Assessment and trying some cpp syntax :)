@@ -16,3 +16,8 @@ Activity1 a1
 Activity2 a2
 Activity3 a3
 Activity4 a4
+
+if a1 cout"<<Spontaneously grasps objects from DH or table with AH. Releases to table using AH whem promped" {
+if cin>>"True"
+
+ 
