@@ -1,0 +1,79 @@
+/* Assisting Hand Assessment - Clinical Logic Model */
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class AimOfTreatment {
+public:
+    vector<string> goals;
+};
+
+class Abilities {
+public:
+    bool spontaneous_AH_initialisation;
+};
+
+class Activities {
+public:
+    vector<string> tasks;
+};
+
+class StrategiesTaught {
+public:
+    vector<string> strategies;
+};
+
+class VerbalMediation {
+public:
+    vector<string> cues;
+};
+
+int main() {
+
+    AimOfTreatment aot;
+    Abilities ab;
+    Activities act;
+    StrategiesTaught stt;
+    VerbalMediation vm;
+
+    // Clinical assessment
+    ab.spontaneous_AH_initialisation = false;
+
+    if (ab.spontaneous_AH_initialisation == true) {
+        cout << "Wszystko z Twoim dzieckiem jest w porządku, nie martw się :)" << endl;
+    } 
+    else {
+
+        // Main therapeutic direction
+        aot.goals = {
+            "Encourage spontaneous initiation of AH in bimanual tasks",
+            "Teach child to use AH to stabilize objects using weight of support"
+        };
+
+        // Example activities
+        act.tasks = {
+            "Switch activated toys",
+            "Finger pointing",
+            "Patting soft toys",
+            "Large magnetic or velcro toys (sufficient resistance)"
+        };
+
+        // Strategies taugh
+        stt.strategies = {
+            "Always attend to and look at the AH before using the DH",
+            "Initiate, position and stabilise objects with AH before grasping with DH",
+            "Establish role of AH (stabiliser) and DH (manipulator)"
+        };
+
+        // Verbal mediation
+        vm.cues = {
+            "This hand",
+            "Push"
+        };
+    }
+
+    return 0;
+}
