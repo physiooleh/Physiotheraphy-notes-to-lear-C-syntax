@@ -1,4 +1,4 @@
-Assissting Hand Assessment jest bardzo dobry test tym ze jest bardzo spontaniczny czyli pokazuje co to dziecko realnie robi. 
+/* Assissting Hand Assessment jest bardzo dobry test tym ze jest bardzo spontaniczny czyli pokazuje co to dziecko realnie robi. 
 Tak jak w przypadku tego chlopca, on sobie po prostu sie bawi. Dostaje jakies zabawki oburecznie i na podstawie tego jak on sie bawi my sobie ta reke oceniamy.
 Natomiast co tu mozemy na szybko zobaczyc, tak, ta reka jest wykorzystywana w zadadaniu, pojawia sie tam jakis chwyt u niego
 probuje zlapc czesc nagrania tak zeby bylo wiecej manipulacji chociaz manipulacji w tej rece nie bedzie.
@@ -8,4 +8,97 @@ ale potrafi wykorzystac ja w zadaniu jak by ma swiadomosc tej reki.
 No i jesli mamy takiego delikwenta to juz sobie myslimy nad czym u takiego pacjenta mozemy pracowac. WIdzimy:
 otwiera dlon, moze nie robi tego w idealnych wzorcach, moze tu pojawiaja sie jakies wzorce patologiczne , nie ddo konca na tym etapie mnie to interesuje 
 interesuje mnie jak on tej reki używa, czy potrafi: chwycić, sięgnąć, uwolnić, przełożyć, czy ma oburęczną prace, czy ta ręka w ogóle jest wykorzystywana 
-do zadania. 
+do zadania. */
+
+Tak 🙂 I to nawet bardzo dobra metoda nauki — bierzesz swoją notatkę kliniczną i zamieniasz ją w logikę programu. Wtedy uczysz się składni „przy okazji”, bez suchej teorii.
+
+Zrobimy prosty program w C++, który:
+
+* reprezentuje dziecko
+* sprawdza czy potrafi: chwycić, sięgnąć, uwolnić, przełożyć
+* sprawdza czy ręka jest dominująca czy asystująca
+* wypisuje wnioski terapeutyczne
+
+Bez tabel, bez komplikacji — czysta składnia.
+
+---
+
+## 🔹 Przykładowy kod C++
+
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    // Umiejętności dziecka (true = potrafi, false = nie potrafi)
+    bool potrafiSięgnąć = true;
+    bool potrafiChwycić = true;
+    bool potrafiUwolnić = true;
+    bool potrafiPrzenieść = false;
+    bool pracaBimanualna = true;
+
+    string rękaWiodąca = "left";
+    string rękatestowana = "right";
+
+    cout << "Assisting Hand Assessment" << endl;
+
+    if (potrafiSięgnąć)
+        cout << "Potrafi sięgnąć do przedmiotu." << endl;
+
+    if (potrafiChwycić)
+        cout << "Potrafi chwycic przedmiot." << endl;
+
+    if (potrafiUwolnić)
+        cout << "Potrafi uwolnic przedmiot." << endl;
+
+    if (!potrafiPrzenieść)
+        cout << "Brak manipulacji / przekladania." << endl;
+
+    if (pracaBimanualna)
+        cout << "Występuje praca oburęczna." << endl;
+
+    if (rękaTestowana != rękaWiodąca)
+        cout << "Testowana reka jest reka asystujaca." << endl;
+
+    cout << endl;
+    cout << "Wniosek terapeutyczny:" << endl;
+
+    if (potrafiChwycić && potrafiSięgnąć && potrafiUwolnić)
+    {
+        cout << "Reka jest wykorzystywana w zadaniu." << endl;
+        cout << "Mozna pracowac nad manipulacja i precyzja chwytu." << endl;
+    }
+    else
+    {
+        cout << "Nalezy pracowac nad podstawowa funkcja reki." << endl;
+    }
+
+    return 0;
+}
+```
+
+---
+
+## 🔹 Czego tu się uczysz?
+
+Z Twojej notatki zrobiłeś:
+
+* `bool` → czy dziecko potrafi daną funkcję
+* `if` → logika kliniczna
+* `string` → ręka dominująca / asystująca
+* `cout` → raport terapeutyczny
+
+To jest dokładnie to, co robisz w głowie jako terapeuta — tylko zapisane w logice C++.
+
+---
+
+Jeśli chcesz, mogę Ci pokazać wersję bardziej „profesjonalną”:
+
+* ze strukturą `struct Patient`
+* albo z klasą `class Patient`
+* albo wersję, która czyta dane z pliku (jak w Twoim wcześniejszym przykładzie z `ifstream`)
+
+I wtedy będziesz się uczył C++ na własnym materiale klinicznym 💪
