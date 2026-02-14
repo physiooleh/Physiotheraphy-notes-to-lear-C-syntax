@@ -5,10 +5,145 @@ probuje zlapc czesc nagrania tak zeby bylo wiecej manipulacji chociaz manipulacj
 To co sie pojawa, no napewno potrafi: chwycic przedmiot, siegnac do niego ta reka, uwolnic przedmiot, natomiast ewidzentnie nie jest to reka dominujaca ta prawa, 
 jest ona reka asystujaca, widzimy ze ten chwyt jest taki globalny, nawet jak ze strony prawej reki cos jest podane to itak bardziej lewa reka siegal 
 ale potrafi wykorzystac ja w zadaniu jak by ma swiadomosc tej reki.
-No i jesli mamy takiego delikwenta to juz sobie myslimy nad czym u takiego pacjenta mozemy pracowac. WIdzimy:
-otwiera dlon, moze nie robi tego w idealnych wzorcach, moze tu pojawiaja sie jakies wzorce patologiczne , nie ddo konca na tym etapie mnie to interesuje 
+No i jesli mamy takiego delikwenta to juz sobie myslimy nad czym u takiego pacjenta mozemy pracowac. WIdzimy: otwiera dlon, moze nie robi tego w idealnych wzorcach, moze tu pojawiaja sie jakies wzorce patologiczne, nie do konca na tym etapie mnie to interesuje, 
 interesuje mnie jak on tej reki używa, czy potrafi: chwycić, sięgnąć, uwolnić, przełożyć, czy ma oburęczną prace, czy ta ręka w ogóle jest wykorzystywana 
-do zadania. */
+do zadania. 
+
+potrafi == 2
+potrafi z trudnosciami == 1
+nie potrafi == 0
+class = chwycic  
+public: {}
+siegnac
+class = siegnac
+public: {}
+class = uwolnic
+public: {}
+class = przelozyc
+public: {}
+
+*/
+
+#include <iostream>
+using namespace std;
+
+class Reka {
+public:
+    int chwycic;
+    int siegnac;
+    int uwolnic;
+    int przelozyc;
+    int pracaObureczna;
+
+    int suma() { 
+        return chwycic + siegnac + uwolnic + przelozyc + pracaObureczna;
+    }
+
+double srednia() { 
+     return suma() / 5.0;
+    }
+
+        cout << suma() << endl;
+void pokazWynik() {
+cout << srednia() << endl;
+if (srednia())
+        if (srednia() >= 1.5)
+            cout << "Reka funkcjonalna" << endl;
+        else if (srednia() >= 0.8)
+            cout << "Reka czesciowo funkcjonalna" << endl;
+        else
+            cout << "Reka slabo wykorzystywana" << endl;
+    }
+};
+
+int main() {
+
+    Reka prawa;
+
+    prawa.chwycic = 2;
+    prawa.siegnac = 2;
+    prawa.uwolnic = 2;
+    prawa.przelozyc = 1;
+    prawa.pracaObureczna = 1;
+
+    prawa.pokazWynik();
+
+    return 0;
+}
+
+
+Super pomysł 😊 Łączysz C++ z fizjoterapią ręki – to jest dokładnie Twój klimat jako neurofizjoterapeuty.
+
+Zrobimy **prosty program w C++ z użyciem `int`, bez `bool`, który:
+
+przypisuje każdej funkcji wartość:
+
+   `1` = potrafi (++),
+   `2` = potrafi średnio (+-),
+   `3` = nie potrafi (--),
+ liczy sumę punktów,
+ oblicza średnią,
+ daje prostą interpretację jakości funkcji ręki.
+
+Gotowy, prosty kod:
+
+```cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    // Skala:
+    // 1 = potrafi (++)
+    // 2 = potrafi średnio (+-)
+    // 3 = nie potrafi (--)
+
+    int przytrzymac = 1;
+    int nacisnac = 1;
+    int ustabilizowac = 1;
+    int ulozyc = 2;
+    int chwyt = 3;
+
+    int suma = przytrzymac + nacisnac + ustabilizowac + ulozyc + chwyt;
+    double srednia = suma / 5.0;
+
+    cout << "Suma punktow: " << suma << endl;
+    cout << "Srednia: " << srednia << endl;
+
+//srednia oholoszujetsia czerez double bo je sumoju dilennia na 5 usich punktiw    
+if (srednia <= 1.5) {  
+        cout << "Funkcja reki dobra (++ dominujace)" << endl;
+    }
+    else if (srednia <= 2.3) {
+        cout << "Funkcja reki srednia (+- dominujace)" << endl;
+    }
+    else {
+        cout << "Funkcja reki oslabiona (-- dominujace)" << endl;
+    }
+
+    return 0;
+}
+```
+
+Dla Twojego przykładu:
+
+* 1 + 1 + 1 + 2 + 3 = **8**
+* Średnia = **1.6**
+* Wynik → funkcja średnia (+- dominujące)
+
+Czyli klinicznie: ręka asystująca, stabilizacyjna, ale bez funkcji chwytnej — dokładnie jak w Twoim opisie jakości ruchu.
+
+Jak będziesz chciał, możemy potem:
+
+* zrobić wersję z wprowadzaniem danych z klawiatury (żebyś mógł oceniać pacjenta „na żywo”),
+* zrobić prostą klasę `Reka`,
+* albo mini-skalę bardziej kliniczną (np. osobno stabilizacja, manipulacja, chwyt precyzyjny).
+
+Leć do pracy spokojnie 💪
+Wieczorem możemy podkręcić to jak dobrą terapię neurorozwojową 😉
+
+
 
 Tak 🙂 I to nawet bardzo dobra metoda nauki — bierzesz swoją notatkę kliniczną i zamieniasz ją w logikę programu. Wtedy uczysz się składni „przy okazji”, bez suchej teorii.
 
