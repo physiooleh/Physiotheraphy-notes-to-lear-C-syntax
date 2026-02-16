@@ -73,6 +73,79 @@ int main() {
     return 0;
 }
 
+///
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int typ_hemiplegii;
+    int typ_uszkodzenia;
+    int czas_uszkodzenia;
+    int prechtl;
+    int mri;
+
+    cout << "Typ hemiplegii:\n";
+    cout << "1 - malformacyjny\n";
+    cout << "2 - wczesniaczy\n";
+    cout << "3 - okoloporodowy\n";
+    cout << "4 - nabyty\n";
+    cin >> typ_hemiplegii;
+
+    cout << "\nTyp uszkodzenia:\n";
+    cout << "1 - leukomalacja\n";
+    cout << "2 - uszkodzenie korowe\n";
+    cin >> typ_uszkodzenia;
+
+    cout << "\nCzas uszkodzenia:\n";
+    cout << "1 - prenatalny/wczesniaczy\n";
+    cout << "2 - okoloporodowy\n";
+    cout << "3 - po urodzeniu\n";
+    cin >> czas_uszkodzenia;
+
+    cout << "\nTest Prechtla (1 = prawidlowy, 0 = nieprawidlowy): ";
+    cin >> prechtl;
+
+    cout << "MRI/USG zmiany obecne? (1 = tak, 0 = nie): ";
+    cin >> mri;
+
+    int score = 0;
+
+    // Typ hemiplegii
+    score += typ_hemiplegii;
+
+    // Uszkodzenie korowe gorsze rokowanie
+    if (typ_uszkodzenia == 2)
+        score += 2;
+    else
+        score += 1;
+
+    // Czas uszkodzenia
+    score += czas_uszkodzenia;
+
+    // Prechtl
+    if (prechtl == 0)
+        score += 2;
+
+    // MRI
+    if (mri == 1)
+        score += 2;
+
+    cout << "\nWynik ryzyka: " << score << endl;
+
+    if (score <= 6)
+        cout << "Prognoza relatywnie korzystna\n";
+    else if (score <= 10)
+        cout << "Ryzyko umiarkowane - wymaga monitorowania\n";
+    else
+        cout << "Wysokie ryzyko trudnej funkcji reki\n";
+
+    return 0;
+}
+
+
+///
 
 
 #include <iostream>
