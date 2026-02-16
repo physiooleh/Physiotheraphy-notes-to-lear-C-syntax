@@ -11,22 +11,67 @@ do zadania.
 /* Bardzo duzo wtedy mowilam o tym czasie uszkodzenia i reorganizacji drog korowych, mowilismy o tym ze jesli dziecko ma uszkodzenie jako wczesniak no to tam moze dojsc do tej ipsilateralnej, niefajnej reorganizacji ale jesli u dziecka dojdzie do uszkodzenia po porodzie 
 na przyklad, u trzymiesiecznego niemowlaka albo u pieciomiesiacznego niemowlaka dojdzie do udaru mozguu, jakiegos nowotworu czy czegos i tez dojdzie do uszkodzenia tej kory odpowiedzialnej za funkcje reki to tez bedzie bardzo niefajny wzorzec tej reki i ona prognozuje zdecydowanie
 gorzej nz na przyklad reka ktora byla uszkodzona w okresiw wczesniaczym ale wytworzyla sie nam organizacja kontralateralna ktora zdecydowanie lepiej prognozuje. No i teraz juz bedzie. Obiektywne testy w fizjoterapii: AHA, baby AHA ale pod pytaniem czy prognozuje 
-jaki to jest typ uszkodzenia. Raczej wiemy t z wywiadu, z rezonansu  bo widzimy ktore strefy zostaly uszkodzone */
-
-potrafi == 2
-potrafi z trudnosciami == 1
-nie potrafi == 0
-class = chwycic  
-public: {}
-siegnac
-class = siegnac
-public: {}
-class = uwolnic
-public: {}
-class = przelozyc
-public: {}
-
+jaki to jest typ uszkodzenia. Raczej wiemy t z wywiadu, z rezonansu  bo widzimy ktore strefy zostaly uszkodzone 
+Czy to jest leukomalacja okoloporodowa czy to jest bardziej uszkodzenie korowe to tez mniej wiecej wiemy w jakim czasie doszlo do tego uszkodzenia; czy jest to wczesniak czy wlasnie dziecko donoszone: No ta reka jest trudniejsza u tych dzieci u ktorych wlasnie doszlo
+jak by pozniej do uszkodzen, to juz nie jest mozgowe porazenie dzieciece chociaz teoretycznie jesli dochodzi do uszkodzenia centralnego ukladu nerwowego do drugiego roku zycia no to nadal klasyfikujemy to jako mozgowe porazenie dzieciece.
+Mamy typy hemiplegii: malformacyjny, wczesniaczy, okoloporodowy, nabyty. I ten nabyty to wlasnie po urodzeniu do 2 roku zycia. Sa pojedyncze zrodla ktore nawet do 6 roku zycia klasyfikuja to uszkodzenie CUN. 
+Ale faktycznnie. 
+Chyba nie ma takich testow chyba ze trzeba byloby zrobic rezonans funkcjonalny magnetyczny z wyswietleniem drog korowych i przebiegu ich reorganizacji. We Wloszech to robi Andrea Guzetta. To sie nazywa traktografia.
 */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int czas_uszkodzenia;
+    int reorganizacja;
+    int aha;
+
+    cout << "Czas uszkodzenia:\n";
+    cout << "1 wczesniaczy\n";
+    cout << "2 po porodzie\n";
+    cin >> czas_uszkodzenia;
+
+    cout << "\nTyp reorganizacji:\n";
+    cout << "1 - kontralateralna\n";
+    cout << "2 - ipsilateralna\n";
+    cin >> reorganizacja;
+
+    cout << "\nPodaj wynik AHA (0-100): ";
+    cin >> aha;
+
+    int prognoza_score = 0;
+
+    if (czas_uszkodzenia == 1)
+        prognoza_score += 1;
+    else prognoza_score += 2;
+
+    if (reorganizacja == 1)
+        prognoza_score += 1;
+    else
+        prognoza_score += 3;
+
+    if (aha >= 70)
+        prognoza_score += 1;
+    else if (aha >= 40)
+        prognoza_score += 2;
+    else
+        prognoza_score += 3;
+
+    cout << "\nWynik prognostyczny: " << prognoza_score << endl;
+
+    if (prognoza_score <= 3)
+        cout << "Prognoza dobra\n";
+    else if (prognoza_score <= 6)
+        cout << "Prognoza umiarkowana\n";
+    else
+        cout << "Prognoza niekorzystna\n";
+
+    return 0;
+}
+
+
 
 #include <iostream>
 using namespace std;
