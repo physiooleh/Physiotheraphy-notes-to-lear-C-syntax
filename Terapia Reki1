@@ -1,0 +1,421 @@
+
+# Wiek dziecka w miesiącach
+age = int(input("Podaj wiek dziecka w mm:"))
+if 3 <= age <= 12:
+    print ("Uzyj Hand Assissment for infants")
+elif 8 <= age <= 18:
+    print("Uzyj Mini Assissting Hand Assessment")
+# Wyniki oceny - symulacja
+helperHandSkill = input("Jak czesto dziecko wzuwa helper hand ? (always/somethimes/rarely/never)") 
+activityLevel = None
+if helperHandSkill.lower() == "always":
+    activityScore = int(input("Podaj score aktywności (0-10): "))
+    if activity_score == 10:
+        activity_level = "Medium activity"
+    else:
+        activity_level = "Hard activity"
+elif helper_hand_skill.lower() in ["sometimes", "seldomly", "slow"]:
+    activity_level = "Medium activity"
+elif helper_hand_skill.lower() == "never":
+    activity_level = "Easy activity"
+
+print(f"→ Wybierz poziom aktywności: {activity_level}")
+
+
+Baby-CIMT (Constraint Induced Movement Therapy for infants)
+What is baby-CIMT?
+Constraint induced movement therapy (CIMT) is a well-researched treatment approach for children with hemiplegia above the age of 18 months. Baby-CIMT is a modification of CIMT, adapted to infants and babies under the age of 18 months who are at risk of developing hemiplegic cerebral palsy (CP).
+for (age = 0; age >= 18; age++)
+Baby-CIMT is characterized by the same factors of CIMT:
+Constraint of the stronger arm and hand
+bool StrongerArm = true
+     constrait stronger arm 
+Intensive structured training of the affected hand involving repetition
+Challenging yet achievable task-oriented activities
+Positive feedback and encouragement to reinforce motor learning
+Its main purpose is to increase the use of the affected hand, by giving the child numerous opportunities to repeat tasks with the affected hand, so that its development keeps up with that of the non-affected hand.
+To achieve this, some form of restraint for the non-affected hand is used during therapy time. Children are encouraged and stimulated to use their affected upper limb through play and exploration of their everyday environment and toys,
+and this is something that can be carried out by parents, under the supervision of a therapist.
+
+Early intervention
+Early intervention is important because learning-induced brain plasticity at an early age seems to have a unique impact on brain development[1].
+Baby-CIMT takes advantage of the plastic properties of the young developing brain, and our knowledge around activity-dependent cortical reorganization, and aims to influence the development of the child’s hand function.
+Two of the key elements of motor learning, are repetition and positive feedback. Babies are very sensitive to encouragement and learn skills through the encouragement and responses they get from their parents.
+
+There are no official guidelines yet regarding the intensity, dosage, and starting age of baby-CIMT. In the most recent study[2], it is recommended that baby-CIMT start when asymmetric hand use is first observed (usually around the age of 3-5 months).
+Training should start when the baby begins to show an interest in objects around them, trying to explore and grasp them.
+Eliasson states: “At an early age, it can be difficult to know if the asymmetric hand function will lead to unilateral CP or disappear. 
+However, training provided in an appropriate way will not harm any child’s development”[2].
+
+The evidence
+There is currently very limited evidence on the effect of baby-CIMT. The reason for this is that it is a relatively new form of therapy for children this young and it is still being investigated.
+Some of the main obstacles to conducting early intervention studies with infants include the unclear diagnosis and lack of tools for assessing the development of hand function at such an early age.
+A retrospective study in 2015 comparing hand function of two year old children who received baby-CIMT and children who didn’t,
+found that the children who received baby-CIMT were six times more if bool BabyCIMT = true ++6 likely to have a high functional level at the age of two, than the children that did not receive the treatment[3].
+The most recent explorative study carried out in 2018 used a training dosage of 36 hours in total, split into two periods of six weeks, during which the babies had a constraint on their non-affected hand for 30 minutes per day and received therapy during this time[2].
+Compared to baby-massage[4], the children receiving baby-CIMT showed a significant improvement in unimanual abilities on the Hand Assessment for Infants (HAI) int unimanualAbilities [5][6].
+
+
+Conclusion & Clinical implications
+In agreement with the results of CIMT studies in older children[7], baby-CIMT appears to have a positive influence on the early development of hand function and might even be beneficial for later development of hand function[2]. 
+The limited research that is available to us shows that there is some evidence that baby-CIMT is effective, however more research is needed[8]. Further clinical trials need to explore the effectiveness of baby-CIMT
+compared to other forms of early intervention therapy, the optimal dosage, intensity, and starting ages, as well as the long term-effects of baby-CIMT. It is important to note that no adverse effects were reported in any studies by therapists or parents.
+
+Assessment
+bool assymetry
+• Is there an asymmetry (i.e. 
+a difference between 
+hands)?
+
+GoalSetting
+while (targetMotorMovement >= 10) print "No need the therapy"
+      (targetMotorMovemenr <= 10) print "Need the therapy"
+• Establish goals & focus areas 
+• What are the target motor movements baby needs to work on?
+
+Positioning 
+bool symmetricalSittingUpright 
+if true print "No need the positioning"
+if false print "Need the positioning"
+• Is baby sitting upright and  is baby symmetrical? 
+• Is the parent sitting in front  of baby or off to the side of baby?
+
+RepetitivePractice: 
+• Explode the natural daily play opportunities. 
+• Be intentional when playing with baby.
+bool intentionalPlaying
+
+Toys 
+• Are the toys safe and engaging? 
+• Are the toys provoking target motor movements and meeting the goals? 
+• Are the toys age and cognitively appropriate?
+
+Blocking 
+• Did you block the baby’s strong hand with something easy to apply, safe, removable and comfortable for baby? 
+
+Dose
+• 30 mins. per day, x7 days, x6 weeks 
+• 6 week break to play with baby to 
+provoke use of both hands 
+• Repeat program (30 mins per day, x7 days, x6 weeks)
+
+Fun
+• Did you have fun with baby? 
+• Do not force, watch for baby’s cues.
+
+Outcome
+• Self-initiated movements; did baby do more active movements with the weaker arm/hand?
+
+python
+
+print("Baby-CIMT clinical check \n")
+asymmetry = bool(int(input("Is there asymmetry between hands? (1 yes / 0 no): ")))
+targetMotorMovements = int(input("How many target motor movements are limited? (number): "))
+if targetMotorMovements <= 10:
+    print("Therapy needed based on motor targets. \n")
+else:
+    print("No intensive therapy needed. \n")
+symmetricalSitting = bool(int(input("Is baby sitting upright and symmetrical? (1 yes / 0 no): ")))
+if symmetricalSitting:
+    print("No positioning correction needed. \n")
+else:
+    print("Positioning correction required. \n")
+intentionalPlay = bool(int(input("Is play intentional and structured? (1 yes / 0 no): ")))
+if not intentional_play:
+    print("Increase structured repetition and task focus. \n")
+blockingUsed = bool(int(input("Is stronger hand blocked safely? (1 yes / 0 no): ")))
+minutesPerDay = 30
+daysPerWeek = 7
+weeks = 6
+totalMinutes = minutesPerDay * daysPerWeek * weeks
+totalHours = totalMinutes / 60
+
+print(f"\nTotal therapy dose: {totalHours} hours")
+improvement = bool(int(input("\nDid baby initiate more movements with weaker hand? (1 yes / 0 no): ")))
+if improvement:
+    print("Positive neuroplastic adaptation observed.")
+else:
+    print("Reassess goals, positioning, or repetition intensity.")
+
+print("\nEnd of Clinical Algorithm")
+
+
+====
+
+Baby Constraint Induced Movement Therapy
+Baby Constraint Induced Movement Therapy (CIMT) is designed for infants as young as 3 months of age at risk of hemiplegic cerebral palsy or with a diagnosis of hemiplegic cerebral palsy (HCP). 
+Baby CIMT aims to increase arm and hand movement and can be easily done at home.
+What you need to perform baby CIMT:
+
+Step1 if (bool blockDominantHand = false)
+    print "Nie zablokowales dziecku zdrowej reki, RTFM lol kek czeburek")
+else (bool blockDominantHand = true
+    Step2))
+Step2 if(bool toysEasyGrasp = false)
+    print "amazon.com/baby_toys"
+else (bool toysEasyGrasp = true)
+    Step3
+Step3 if(bool babySittingUpright = false)
+    print "You need the device to positioning your baby"
+else(bool babySittingUpright = true)
+  print "You can start the therapy without positioning device"
+PhysioEquipe if(bool PhysioEquipe = true)
+    print "Physio equipe with you, dont worry"
+esle if(bool PhysioEquipe = false)
+    print "RTFM lol kek czeburek"
+
+• Gently block the dominant arm/hand (i.e. placing a sock  or mitten over your child’s arm, a “chip clip” over the opening of a onesie, sewing the opening of a shirt sleep shut)
+• Safe and age-appropriate toys that are easy to grasp and will motivate your child (i.e. toys with lights or that make sound easily)
+• A device to support your child sitting upright, such as an infant seat or high chair
+
+Baby CIMT at home should be supported by weekly coaching with your clinical team, such as an occupational therapist, physiotherapist or an early interventionist.
+Activity should be supervised and all toys should be checked periodically for safety. 
+
+AI====
+
+print("Baby CIMT Home Checklist \n")
+blockDominantHand = bool(int(input("Is the dominant hand gently blocked? (1 yes / 0 no): ")))
+if not blockDominantHand:
+    print("You need to gently block the dominant hand before starting therapy.\n")
+else:
+    print("Blocking is properly applied.\n")
+
+toys_easy_grasp = bool(int(input("Are toys safe and easy to grasp? (1 yes / 0 no): ")))
+
+if not toys_easy_grasp:
+    print("→ Provide safe, age-appropriate, motivating toys.\n")
+else:
+    print("✓ Toys are appropriate.\n")
+
+# Step 3 – Positioning
+baby_sitting_upright = bool(int(input("Is baby sitting upright and supported? (1 yes / 0 no): ")))
+
+if not baby_sitting_upright:
+    print("→ Provide proper seating support (infant seat / high chair).\n")
+else:
+    print("✓ Positioning is adequate.\n")
+
+# Step 4 – Clinical supervision
+physio_equipe = bool(int(input("Is weekly clinical coaching provided? (1 yes / 0 no): ")))
+
+if physio_equipe:
+    print("✓ Clinical supervision in place.\n")
+else:
+    print("→ Weekly coaching with therapist recommended.\n")
+
+print("=== Checklist Completed ===")
+
+
+=======
+Introduction to Modified Baby Constraint Induced Movement Therapy (Baby-CIMT)
+Acknowledgements:
+This website was made possible through the collaborative efforts of healthcare practitioners and researchers across Canada: 
+Sophie Lam-Damji, Liz Cambridge, Bisman Mangat, Darcy Fehlings, Lauren Switzer (Holland Bloorview Kids Rehabilitation Hospital)
+Christine Marchessault, Scott Thieu (IWK Health)
+Catherine Scott (Janeway Children’s Rehabilitation Centre)
+Melissa Myers (Queen Elizabeth Hospital)
+Giannoula Mentakis (Montreal Children’s Hospital)
+Melanie Gagnon (CHU Sainte-Justine)
+Paige Kirby (Rehabilitation Centre for Children)
+Charlotte Henderson (Saskatchewan Health Authority)
+Kathleen O’Grady (Glenrose Rehabilitation Hospital)
+Keith O’Connor (BC Children’s Hospital)
+
+What is Modified Baby-CIMT?
+
+Modified Baby Constraint Induced Movement Therapy (Baby-CIMT) is a proven, safe, and effective early motor-based intervention for infants as young as 3 months of age. 
+
+print("age \n")
+age = bool(int(input("Age? (if age <= 3)(print "normal CIMT")(else age >= 3)(print "Baby CIMT"): ")))
+
+Throughout the handbook, modified Baby-CIMT will be referred to as Baby-CIMT. 
+Baby-CIMT is recommended for infants with an early hand preference, or infants who have a diagnosis or probability of hemiplegic cerebral palsy (HCP). 
+Infants with HCP have a preference to use one arm/hand more than the other arm/hand. The goal of Baby-CIMT is to improve self-initiated active movement in the helper hand (less-used hand) for the purpose of developing helper hand skills for using two hands together.
+Baby-CIMT programs involve blocking the infant's dominant hand for short periods during the day and involves coaching parents on how to use toys and play situations to provide intensive, repetitive, systematic, and progressive motor practice. 
+Evidence from controlled clinical trials has shown that Baby-CIMT provided in the first two years of life improves arm/hand function. Starting this program early provides more opportunities for infants to learn to use their helper hand when the brain is
+reorganizing motor pathways.  
+
+A hybrid, modified approach pairing Baby-CIMT with opportunities to use two hands together to play with toys will help infants to learn to integrate the unilateral helper hand skills learned. 
+This handbook focuses on how to implement Baby-CIMT including toy and play ideas to develop a customized Baby-CIMT program. For two-handed play, try common toys that require symmetrical movements; such as, banging cymbals and shaking maracas. 
+Additionally, to encourage complex skills with both hands, give toys that require the helper hand to hold and grasp the toy while the other hand pinches, pokes, pulls, and manipulates the toy; such as, toys with moving parts or hiding toys inside another object/toy.
+This will encourage complex, two-handed skills, including turning, rotating, twisting, and grasping/regrasping with both hands (see Appendix A- Example of a Baby-CIMT Program).
+Why do Baby-CIMT?
+The first year of life is a critical period for brain reorganization. Starting Baby-CIMT early in the first year of life can increase arm/hand function in the helper hand.
+if starting <= 12
+    print "Increasing hand function"
+else starting >= 12
+    print "dont worry, neuroplasticity in action"
+When to do Baby-CIMT?
+Baby-CIMT is a parent/caregiver mediated play program for infants 3 months to 2 years of age //array [3-24] if(array == [3-24] (print "Good for Baby CIMT")). 
+Baby-CIMT can be done for short periods of time during the day over several weeks in the infant's daily environment(s) (e.g., home, daycare).
+Who can do Baby-CIMT?
+Baby-CIMT is typically done by parents/caregivers in the infant's natural environments, such as at home. The clinical team (e.g., OT, PT, and/or early interventionist) coaches caregivers/parents on how to implement Baby-CIMT to suit their infant's developing needs. 
+Tips for Playing with Infant
+Play with the toy yourself before offering it to the infant so you are familiar with what helper hand skills are needed. 
+Present the toy in front of the infant, and on the helper hand side.
+Show the infant how you want them to play with the toy. 
+Provide minimal assistance, if needed, for infant to initially learn how to play with the toy. Withdraw the assistance as soon as the infant demonstrates the ability to play with the toy. 
+Give one toy at a time, remove each toy before introducing another toy.
+Wait for the infant to use the helper hand to play with the toy.
+Give positive feedback immediately to encourage the infant to repeat the play (smile, clap, praise).
+if (bool feedback = true    print "Feedback is good continue")    else (bool feedback = false    print "Jestescie rodzice z Europy wschodniej nie ma co sliunuaka roscic, niech przetrwa, musi byc twardy hahaha")
+If the infant does not play with the toy, change how you present the toy (e.g., give the toy in an easy position) or give a different toy.
+To keep the infant engaged with fresh and novel toys, put together a bin of toys that is only brought out when doing the Baby-CIMT program.
+If the infant is mouthing toys, consider using a pacifier. 
+How do I do Baby-CIMT?
+Baby-CIMT is a motor-based, early intervention using toys and play to repeatedly encourage infants to use their helper hand. The clinical team educates caregivers/parents, 
+for example, on how to play with their infant to encourage use of the helper hand, considerations for toys, and how to present toys to best encourage helper hand skills. 
+Depending on the infants’ needs and parent/caregiver goals, Baby-CIMT programs will differ between infants. The best Baby-CIMT program is one that is “just right” for the infant. 
+This means a program that is customized to the infant’s needs and optimally encourages repeated use of the helper hand. As such, the implementation, the frequency, and the duration of Baby-CIMT programs will vary.
+See Appendix A – Example of a Baby-CIMT Program.
+What do I need to do Baby-CIMT?
+For Baby-CIMT, you will need:
+
+A way to gently block the dominant arm/hand (see Suggestions for Blocking Techniques)
+Safe, age-appropriate toys that will motivate the infant to use the helper hand (see Suggestions to Work on Helper Hand Skills)
+A device to position and support the infant in a safe, seated position. Sitting is the preferred position for Baby-CIMT. If your infant is unable to sit, see Tips for Positioning. 
+How do I know if I am doing Baby-CIMT correctly?
+Baby-CIMT programs should be supported by the clinical team. The clinical team will provide ongoing coaching and education to caregivers/parents. 
+In addition, the clinical team will use feedback from caregivers/parents to modify programs as the infant uses the helper hand more.
+
+As a clinician, if parents are actively implementing the program at home and they report the infant is using their helper hand more, this suggests that the program is a “just right” fit.
+How to develop a successful Baby-CIMT program:
+The clinical team may use a variety of methods for assessing infants to inform the development of a customized, “just right” Baby-CIMT program. 
+These methods may include standardized assessments, clinical observations, review of medical history, caregiver/parent report, and/or review of goals.
+If you are using standardized assessments: 
+Available standardized hand assessments: 
+
+if (age arr[3-12])    print "HAI" Hand Assessment for Infants (HAI), ages 3-12 months, (Krumlinde-Sundholm, L; Ek, L; Sicola, E; Sjöstrand, L; Guzzetta, A; Sgandurra, G; Cioni, G; Eliasson, AC (2017)
+Development of the Hand Assessment for Infants: evidence of internal scale validity. Developmental Medicine and Child Neurology. 2017. 59: 1276-1283.
+if (age arr[8-18])    print "Mini AHA" Mini Assisting Hand Assessment (Mini AHA), ages 8-18 months, (Greaves S, Imms C, Dodd K, Krumlinde-Sundholm L. (2013)
+Development of the Mini-Assisting Hand Assessment: evidence for content and internal scale validity. Developmental Medicine & Child Neurology 55;11 1030-1037).  
+A screening assessment, the Screen Hand Assessment for Infant (sHAI) is currently available as a quick tool to assess for differences between the hands. 
+If you are using standardized hand assessments, below is a general guide on how to use the findings from the assessments to develop a customized Baby-CIMT program using the Baby-CIMT - 
+Arm and Hand Adventure: A Tool to Customize Play Activities. This tool helps to generate a list of play activities that match and progress an infant's hand skills. 
+Using the tool, you will be able to select the helper hand skill(s) you would like the infant to work on, the level of difficulty for activities, and the type of toys (commonly found in the home and/or commercially available). 
+ 
+It is important to consider the infant’s developmental readiness and motor skills to match the toy(s) to the infant. You will know you have found the “just right” 
+Baby-CIMT program for the infant if the infant plays with the toy(s) repeatedly using their helper arm/hand. 
+If the toy is too easy or too hard, the infant may not want to play with the toy and not use their helper hand.
+
+HAND ASSESSMENT FOR INFANTS (HAI)
+If the infant always or almost always demonstrates the helper hand skill, select if (activity == 10(print "Medium activity")) else (activity <= 10(print "Hard activity")) medium to hard activities in the Baby-CIMT - Arm and Hand Adventure tool.
+If the infant sometimes, seldomly, or demonstrates slowness or delay in the helper hand skill, select medium activities in the Baby-CIMT - Arm and Hand Adventure tool.
+If the infant does not demonstrate the helper hand skill, select easy activities in the Baby-CIMT - Arm and Hand Adventure tool.
+ 
+age = int(input("Podaj wiek dziecka w mm:"))
+if 3 <= age <= 12:
+    print ("Uzyj Hand Assissment for infants")
+elif 8 <= age <= 18:
+    print("Uzyj Mini Assissting Hand Assessment")
+
+MINI ASSISTING HAND ASSESSMENT (MINI-AHA):
+If the infant is somewhat effective (i.e., almost good but somewhat awkward with mild asymmetry) in the helper hand skill, select medium to hard activities in the Baby-CIMT - Arm and Hand Adventure tool.
+If the infant is ineffective (i.e., clumsy and with clear asymmetry between the two hands) in the helper hand skill, select easy to medium activities in the Baby-CIMT - Arm and Hand Adventure tool.
+If the infant does not or is unable to use the helper hand skill, select easy activities in the Baby-CIMT - Arm and Hand Adventure tool.
+
+effective = int(input("Effectivity of baby")
+if bool = true
+    print ("Baby is effective")
+if bool = false 
+    print ("Baby is innefective")
+
+If you are NOT using standardized hand assessments: 
+
+If you are not trained on the standardized hand assessments, use the figure below to circle the helper hand skill(s) that the infant can do to determine what skills to start working on. Use the Baby-CIMT - Arm and Hand Adventure Tool to select appropriate activities. For missing skills, select easy tasks. For helper hand skills that are ineffective, slow, and/or clumsy, select medium tasks. For somewhat effective hand skills, select medium to hard tasks. 
+
+If the infant is not yet demonstrating any helper hand skills, you can still develop a Baby-CIMT program starting with easy items in the pre-grasp and reaching section (see Figure 1: Pink Section). When the infant is able to successfully perform a helper hand skill approximately 70-75% of the time, consider progressing to the next difficulty level within the helper hand skill.
+
+
+
+NOTE: Depending on the goals, development, and motor skills, infants may work on skills across coloured sections at the same time. For example, an infant who can manipulate and grasp toys nearby but is unable to reach for toys placed far away could be working on easy tasks within the “pre-grasp and reaching” section and simultaneously working on “refining manipulation”.
+
+ 
+
+It is important to consider the infant's developmental readiness and motor skills to match the toy(s) to the infant. You will know you have found the "just right" Baby-CIMT program for the infant if the infant plays with the toy(s) repeatedly using their helper arm/hand. If the toy is too easy or too hard, the infant may not want to play with the toy and not use their helper hand. 
+
+Example (Developmental Level > Arm/Hand Function): An infant whose developmental level is more advanced than arm/hand function.
+
+The infant may be able to reach but not grasp or hold; knows colors and animal shapes.
+
+Tips:
+
+Choose a toy that is cognitively motivating but requires less motor skill to play with (e.g., sorting animal/color/shapes by reaching to move similar shapes together in a pile).
+Example (Arm/Hand Function > Developmental Level): An infant whose arm/hand function is more advanced than developmental level.
+
+The infant may be able to grasp and release, but not yet manipulate toys; difficulty with self-regulation and attending to play and use of helper hand:
+
+Tips:
+
+Use cause and effect and/or sensory toys (e.g., toys that light-up, vibrate, have textures, have brighter targets) to promote pinching and poking. Sensory toys may be more motivating.
+Limit distraction by removing noise and doing the play session in a less-distracting room to help with focus and attention.
+Show infant how to play with the toy and/or give consistent, simple instructions on how to play with the toy.
+Shorten play session time to match infant’s self regulation.
+See Appendix B – Baby-CIMT Essential Elements for Key Elements to Developing a Successful Baby-CIMT Program.
+
+Getting Started: Practical Tips to Implementing Baby-CIMT
+Tips for When to do Baby-CIMT at Home:
+Choose a time when the infant can play uninterrupted, such as when the infant is fed, alert, and there are minimal distractions.
+Tips for Positioning
+Ideally, the infant should be positioned such that the infant is able to see the caregiver/parent’s reaction. This can help to support engagement and repeated play. While the infant can be positioned in different positions, sitting is the preferred position.
+
+Sitting:
+
+When placing an infant in sitting, ensure that the infant is stable and in midline.  
+
+If infant is unstable, consider using rolled towels in highchair or infant carrier seat. 
+
+	
+Sitting in adult's lap with helper hand in front.
+	
+Side Lying
+
+When positioning the infant in side lying, position with the helper hand on top so the infant will be able to use the helper hand to reach and play.
+
+ 
+
+Supine (Infant Lying on their Back)
+
+In supine, use blocking techniques to encourage reaching with the helper hand. An example is holding the infant’s dominant hand gently or using some of the suggested ways in this handbook to block the dominant hand.
+
+ 
+
+Standing
+
+Depending on the infant’s stability, encourage weight bearing through the dominant hand at a support surface such as wall or coffee table to promote reaching and playing with the helper hand.
+If stable on feet, use blocking techniques to gently block the infant’s dominant hand when standing at a bench/child table with close adult stand-by supervision. Infants may have difficulty getting the helper hand out to protect themselves if the infant falls. 
+
+ 
+
+Equipment Options for Supportive Sitting
+
+Special Tomato	
+Baby Bouncer Chair	
+Highchair	
+Floor Sitter
+
+Suggestions for Blocking the Dominant Hand
+What to Use:
+
+Infant sock, longer fuzzy sock-pair doubled on hand	 
+Infant winter mitten with buckle	
+Munch mitt	
+Coban wrap	 
+Sleep sack with dominant arm to body	 
+Scarf securing dominant arm to body	
+Chip clip at end of the onesie sleeve / tie knot in end of sleeve	
+Sew shut opening of sleeve	 
+Snug sock	
+Hand splint
+
+Helper Hand Skills
+When playing with the infant, use toys to encourage the following helper hand skills. The clinical team should coach and educate caregivers/parents on how to do Baby-CIMT and on how to progress the Baby-CIMT program as the infant’s helper hand skills develop. Additionally, the clinical team should inform caregivers/parents on what to look for when playing with their infant and how they will know that they are on the right track.
+
+This handbook lists toys and play activities from “easy” to “hard” and contains tips to guide clinicians on how to progress the Baby-CIMT program. Remember to always work at the infant’s developmental and motor abilities using your assessment findings, clinical observations, caregiver/parental reports, and/or caregiver/parental goals when developing and progressing the program.
+Toy and Activity Suggestions
+The following play activities can be used to work on multiple helper hand skills. The play activities are progressively graded from "easy" to "hard". Clinicians will need to use clinical judgement on how to present the toy, what toy to use, and how you want the infant to play with the toy to encourage the desired helper hand skill(s). 
+
+Clinicians can also use the Baby-CIMT Arm and Hand Adventure: A Tool to Customize Play Activities to generate a custom Baby-CIMT program to work on selected helper hand skills. 
+
+When doing the following activities, adult supervision is required for safety. Some activities include small parts and can pose a choking hazard. Parents/caregivers should regularly check toys for safety (e.g., broken pieces). 
+
