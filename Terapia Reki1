@@ -1,11 +1,8 @@
-
-# Wiek dziecka w miesiącach
 age = int(input("Podaj wiek dziecka w mm:"))
 if 3 <= age <= 12:
     print ("Uzyj Hand Assissment for infants")
 elif 8 <= age <= 18:
     print("Uzyj Mini Assissting Hand Assessment")
-# Wyniki oceny - symulacja
 helperHandSkill = input("Jak czesto dziecko wzuwa helper hand ? (always/somethimes/rarely/never)") 
 activityLevel = None
 if helperHandSkill.lower() == "always":
@@ -181,13 +178,10 @@ else:
     print("Blocking is properly applied.\n")
 
 toys_easy_grasp = bool(int(input("Are toys safe and easy to grasp? (1 yes / 0 no): ")))
-
 if not toys_easy_grasp:
     print("→ Provide safe, age-appropriate, motivating toys.\n")
 else:
     print("✓ Toys are appropriate.\n")
-
-# Step 3 – Positioning
 baby_sitting_upright = bool(int(input("Is baby sitting upright and supported? (1 yes / 0 no): ")))
 
 if not baby_sitting_upright:
@@ -359,57 +353,57 @@ Choose a time when the infant can play uninterrupted, such as when the infant is
 Tips for Positioning
 Ideally, the infant should be positioned such that the infant is able to see the caregiver/parent’s reaction. This can help to support engagement and repeated play. While the infant can be positioned in different positions, sitting is the preferred position.
 
-Sitting:
-
+/// Sitting = bool(int(input("The infant placing in sitting is stable in midline ? (1 yes / 0 no): ")))
+if not Sitting:
+    print("Use the roller towel in highchair or infant carrier seat.\n")
+else:
+    print("Your baby in midline, great\n") ///
 When placing an infant in sitting, ensure that the infant is stable and in midline.  
-
 If infant is unstable, consider using rolled towels in highchair or infant carrier seat. 
-
-	
 Sitting in adult's lap with helper hand in front.
 	
-Side Lying
-
+SideLying = bool (int(input("Side Lying (1 / 0)))
+if not SideLying: 
+    print("Make the position with the helper hand on top to able the infant use the helper hand to reach and play \n")
+else:
+    print("Your baby in correctr position, great \n")
 When positioning the infant in side lying, position with the helper hand on top so the infant will be able to use the helper hand to reach and play.
 
  
-
-Supine (Infant Lying on their Back)
-
+Supine = bool (int(input("Lying on their back\n")))
+if not Supine:
+    print ("Lay tha baby on supine\n")
+else:
+    print ("Use blocking techniques to encourage reaching with the helper hand")
 In supine, use blocking techniques to encourage reaching with the helper hand. An example is holding the infant’s dominant hand gently or using some of the suggested ways in this handbook to block the dominant hand.
 
  
 
-Standing
-
+Standing = bool (int(input("The baby a stable on feet (1 yes / 0 no)\n")))
+if not Standing:
+    print("Try to use the tecniques from sitting and lying positions\n")
+else:
+    print("Encourage weight bearing through the dominant hand at a support surface")
 Depending on the infant’s stability, encourage weight bearing through the dominant hand at a support surface such as wall or coffee table to promote reaching and playing with the helper hand.
-If stable on feet, use blocking techniques to gently block the infant’s dominant hand when standing at a bench/child table with close adult stand-by supervision. Infants may have difficulty getting the helper hand out to protect themselves if the infant falls. 
+If stable on feet, use blocking techniques to gently block the infant’s dominant hand when standing at a bench/child table with close adult stand-by supervision. 
+Infants may have difficulty getting the helper hand out to protect themselves if the infant falls. 
 
- 
+Equipment_Options_for_Supportive_Sitting [] (Special Tomato, Baby Bouncer Chair, Highchair, Floor Sitter)
 
-Equipment Options for Supportive Sitting
-
-Special Tomato	
-Baby Bouncer Chair	
-Highchair	
-Floor Sitter
-
-Suggestions for Blocking the Dominant Hand
-What to Use:
-
-Infant sock, longer fuzzy sock-pair doubled on hand	 
-Infant winter mitten with buckle	
-Munch mitt	
+Suggestions_for_Blocking_the_Dominant_Hand (Infant sock, longer fuzzy sock-pair doubled on hand, Infant winter mitten with buckle, Munch mitt	
 Coban wrap	 
 Sleep sack with dominant arm to body	 
 Scarf securing dominant arm to body	
 Chip clip at end of the onesie sleeve / tie knot in end of sleeve	
 Sew shut opening of sleeve	 
 Snug sock	
-Hand splint
+Hand splint)
 
 Helper Hand Skills
-When playing with the infant, use toys to encourage the following helper hand skills. The clinical team should coach and educate caregivers/parents on how to do Baby-CIMT and on how to progress the Baby-CIMT program as the infant’s helper hand skills develop. Additionally, the clinical team should inform caregivers/parents on what to look for when playing with their infant and how they will know that they are on the right track.
+Playing if(int(input("Playing")))
+    print("use toys to encourage the following helper hand skills")
+When playing with the infant, use toys to encourage the following helper hand skills. The clinical team should coach and educate caregivers/parents on how to do Baby-CIMT and on how to progress the Baby-CIMT program as the infant’s helper hand skills develop. 
+Additionally, the clinical team should inform caregivers/parents on what to look for when playing with their infant and how they will know that they are on the right track.
 
 This handbook lists toys and play activities from “easy” to “hard” and contains tips to guide clinicians on how to progress the Baby-CIMT program. Remember to always work at the infant’s developmental and motor abilities using your assessment findings, clinical observations, caregiver/parental reports, and/or caregiver/parental goals when developing and progressing the program.
 Toy and Activity Suggestions
@@ -418,4 +412,3 @@ The following play activities can be used to work on multiple helper hand skills
 Clinicians can also use the Baby-CIMT Arm and Hand Adventure: A Tool to Customize Play Activities to generate a custom Baby-CIMT program to work on selected helper hand skills. 
 
 When doing the following activities, adult supervision is required for safety. Some activities include small parts and can pose a choking hazard. Parents/caregivers should regularly check toys for safety (e.g., broken pieces). 
-
