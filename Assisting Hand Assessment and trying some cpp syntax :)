@@ -23,7 +23,7 @@ else if (comando == "documenti necessari - wymagane dokumenty") {
 cout << R";
 }
 else if (comando == "dove si fa passaggio - gdzie dokonuje sie przepisania") {
-cout << R" Si può completare la pratica in quattro tipi di strutture: 
+cout << R "Si può completare la pratica in quattro tipi di strutture: 
 la Motorizzazione Civile della propria provincia, 
 la sede del PRA (Pubblico Registro Automobilistico) più vicina, 
 le agenzie di pratiche auto con lo "Sportello telematico 
@@ -51,8 +51,7 @@ Certyfikat Własności (Certificato di Proprietà).
 Jeśli samochód został sprzedany po 1 października 2021 roku, 
 zamiast dwóch oddzielnych dokumentów istnieje nowy DU 
 (Documento Unico di Circolazione), który łączy wszystkie informacje 
-w jednym dokumencie, upraszczając procedury biurokratyczne. 
-  ";
+w jednym dokumencie, upraszczając procedury biurokratyczne.";
 }
 else if (comando == costi - koszty) {
 cout << R" Poi ci sono le marche da bollo e i diritti, che pesano 
