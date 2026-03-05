@@ -4,3 +4,96 @@
 #include <queue>
 
 using namespace std;
+
+int main() {
+map<string> passaggioDiProprieta;
+queue<string> provinciaUdine;
+string comando
+};
+while (true) {
+getline(cin, comando);
+
+if (comando == "aiuto") {
+cout << R"
+COMANDI DISPONIBILI:
+documenti necessari - wymagane dokumenty
+dove si fa passaggio - gdzie dokonuje sie przepisania
+costi - koszty"; }
+else if (comando == "documenti necessari - wymagane dokumenty") {
+cout << R";
+}
+else if (comando == "dove si fa passaggio - gdzie dokonuje sie przepisania") {
+cout << R" Si può completare la pratica in quattro tipi di strutture: 
+la Motorizzazione Civile della propria provincia, 
+la sede del PRA (Pubblico Registro Automobilistico) più vicina, 
+le agenzie di pratiche auto con lo "Sportello telematico 
+dell'automobilista" (STA), 
+oppure una sede ACI della città. --- Praktykę można zakończyć w 
+czterech typach instytucji:
+w wydziale komunikacji (Motorizzazione Civile) swojej prowincji,
+w najbliższej siedzibie Publicznego Rejestru Samochodowego (PRA),
+w agencjach zajmujących się formalnościami samochodowymi, które mają 
+Telematyczny Punkt Obsługi Kierowcy (STA),
+albo w oddziale WKA (ACI) w danym mieście. 
+";
+}
+else if (comando == "documenti necessari - wymagane dokumenty") {
+I fogli fondamentali sono il "libretto" (Carta di Circolazione) e il 
+Certificato di Proprietà. Se l'auto è stata venduta dopo il 1° 
+ottobre 2021, al posto dei due documenti separati c'è il nuovo DU 
+(Documento Unico di circolazione), che unifica tutte le informazioni 
+in un unico foglio, semplificando la burocrazia.---Niezależnie od 
+wybranego miejsca, sprzedający i kupujący (lub ewentualnie ich 
+pełnomocnicy) muszą stawić się z dokumentami tożsamości oraz 
+dokumentami samochodu. ---Podstawowe dokumenty to „libretto” 
+(Carta di Circolazione) oraz 
+Certyfikat Własności (Certificato di Proprietà).
+Jeśli samochód został sprzedany po 1 października 2021 roku, 
+zamiast dwóch oddzielnych dokumentów istnieje nowy DU 
+(Documento Unico di Circolazione), który łączy wszystkie informacje 
+w jednym dokumencie, upraszczając procedury biurokratyczne. 
+  ";
+}
+else if (comando == costi - koszty) {
+cout << R" Poi ci sono le marche da bollo e i diritti, che pesano 
+parecchio. Servono una 
+marca da bollo da 16,00 euro per la richiesta del DU, 
+una da 32,00 euro per la trascrizione al PRA e 
+10,20 euro per i Diritti di Motorizzazione. 
+Totale: 85,20 euro di emolumenti, diritti e bolli.
+---
+Następnie są opłaty skarbowe (marki da bollo) oraz opłaty 
+administracyjne, które stanowią znaczną część kosztów.
+Potrzebne są:
+opłata skarbowa 16,00 euro za wniosek o DU,
+opłata skarbowa 32,00 euro za wpis do PRA,
+10,20 euro za opłaty Motorizzazione.
+Łącznie: 85,20 euro opłat, należności i podatków skarbowych.
+
+
+La voce più pesante, però, è l'IPT (Imposta Provinciale di Trascrizione), 
+che cresce in base alla potenza del motore in kW e varia molto da 
+provincia a provincia. La base comune: 
+fino a 53 kW (73 CV), l'IPT ha un importo fisso di 150,81 euro. 
+Oltre questa soglia, ogni kW in più vale 3,5119 euro.
+---
+Największą opłatą jest jednak IPT (Imposta Provinciale di Trascrizione), 
+która rośnie w zależności od mocy silnika w kW i znacznie różni się w 
+zależności od prowincji.
+
+Podstawowa zasada jest następująca:
+do 53 kW (73 KM) IPT ma stałą kwotę 150,81 euro.
+Powyżej tej granicy za każdy dodatkowy kW dolicza się 3,5119 euro. 
+";
+}
+else if (comando == "esci") {
+cout << "Uscita dal programma...\n"
+break;
+}
+else {
+cout << "Comando non riconosciuto. Scrivi 'aiuto' \n";
+}
+}
+retorn 0;
+
+
