@@ -1,0 +1,493 @@
+#include <iostream>
+#include <unordered_map>
+#include <string>
+using namespace std;
+int main() {
+unordered_map<string, string> hashTable;
+
+string key = "11.11 Eziopatogenesi";
+
+hashTable[11.11 Eziopatogenesi] = R" Le strutture coinvolte nella malattia di Parkinson si trovano in aree profonde del cervello, 
+note come gangli della base (nuclei caudato, putamen e pallido), che partecipano alla corretta esecuzione dei 
+movimenti (ma non solo).
+La patologia si manifesta quando la produzione di dopamina nel cervello cala consistentemente.
+Cause della riduzione di dopamina
+Degenerazione dei neuroni nella "sostanza nera" (la perdita cellulare è superiore al 60% all’esordio dei sintomi).
+Accumuli di alfa-sinucleina (dal midollo al cervello), probabile responsabile della diffusione della malattia in 
+tutto il cervello.
+La durata della fase preclinica (il periodo tra l’inizio della degenerazione neuronale e l’esordio dei sintomi motori) 
+non è nota, ma alcuni studi la datano intorno a 5 anni.
+Fattori eziologici
+A oggi, le cause della patologia non sono conosciute. Sembra che concorrano multipli fattori, principalmente di carattere:
+
+Genetico:
+Alcune mutazioni sono associate alla malattia.
+
+Geni individuati:
+Alfa-sinucleina (PARK 1/PARK 4),
+Parkina (PARK-2),
+PINK1 (PARK-6),
+DJ-1 (PARK-7),
+LRRK2 (PARK-8),
+
+Glucocerebrosidasia GBA.
+Circa il 20% dei pazienti presenta una storia familiare positiva.
+I familiari di persone affette hanno un rischio lievemente superiore di sviluppare la patologia rispetto alla popolazione generale.
+Tossico:
+Esposizione lavorativa a:
+Pesticidi (es. Paraquat),
+Idrocarburi-solventi (es. trielina),
+Metalli pesanti (ferro, zinco, rame) in professioni come saldatori.
+
+Il fumo di sigaretta sembra essere un fattore protettivo (riduce la comparsa della malattia).
+";
+
+string key = "11.11.3 I sintomi"; 
+string value = R" Sintomi motori
+I principali sintomi motori della malattia di Parkinson sono:
+Tremore a riposo,
+Rigidità,
+Bradicinesia (lentezza dei movimenti automatici).
+In fase avanzata compaiono:
+Instabilità posturale (perdita di equilibrio),
+Discinesie,
+Fluttuazioni motorie.
+Caratteristica: i sintomi si presentano in modo asimmetrico (un lato del corpo è più interessato dell’altro). 
+Tremore
+Può essere un sintomo d’esordio, ma spesso non evolve nel corso degli anni.
+Non è invalidante e non è presente in tutti i pazienti.
+Si manifesta quando il soggetto è a riposo (non compie movimenti).
+Spesso interessa una mano, ma può coinvolgere anche:
+Piedi,
+Mandibola.
+È più evidente su un lato.
+Frequenza: 5-6 movimenti al secondo (oscillazione ben visibile anche mentre il paziente cammina).
+Un altro tipo di tremore riferito nelle fasi iniziali della malattia è il "tremore interno": 
+questa sensazione è avvertita dal paziente, ma non è visibile.
+
+Rigidità
+Aumento involontario del tono muscolare, può essere il primo sintomo della malattia.
+Spesso esordisce da un solo lato del corpo.
+Può manifestarsi a livello di:
+arti,
+collo,
+tronco.
+Segno clinico: la riduzione dell’oscillazione pendolare degli arti superiori durante il cammino, 
+associata a lentezza dei movimenti.
+Caratteristiche della rigidità:
+Extrapiramidale o plastica:
+Interessa sia i muscoli agonisti che gli antagonisti,
+La resistenza opposta alla mobilizzazione passiva è costante,
+Non si osserva il ritorno del segmento disteso alla posizione di partenza.
+Bradicinesia e Acinesia
+Bradicinesia: rallentamento nell’esecuzione dei movimenti e dei gesti.
+Acinesia: difficoltà a iniziare i movimenti spontanei.
+Impatto sulla vita quotidiana:
+
+La maggior parte dei pazienti è consapevole della bradicinesia, spesso riferita come sintomo fastidioso,
+Rende lenti anche i movimenti più semplici,
+Interferisce con attività quotidiane come:
+
+lavarsi,
+vestirsi,
+camminare,
+passare da una posizione all’altra (es. da seduti a in piedi),
+girarsi nel letto.
+
+Test clinico:
+Si evidenzia facendo compiere al soggetto movimenti di manualità fine,
+I movimenti risultano:
+
+più impacciati,
+meno ampi,
+più rapidamente esauribili,
+Con la ripetizione, diventano quasi impercettibili.
+
+
+Sintomi correlati alla bradicinesia
+
+Modificazione della grafia: diventa più piccola (micrografia),
+Scialorrea: aumento della quantità di saliva in bocca, dovuta al rallentamento dei muscoli 
+coinvolti nella deglutizione,
+Ridotta espressione del volto (ipomimia).
+Instabilità posturale
+Sintomo tardivo che coinvolge l’asse del corpo.
+Si evidenzia quando la persona:
+cammina,
+cambia direzione durante il cammino.
+
+Cause: riduzione dei riflessi di raddrizzamento, per cui il soggetto non è in grado di correggere 
+spontaneamente eventuali squilibri.
+Baricentro del corpo: appare spostato in avanti,
+Andatura classica: il paziente "insegue" il proprio baricentro (andatura festinante).
+
+Globalmente, questi pazienti hanno un atteggiamento posturale caratteristico.
+Gli pazienti con malattia di Parkinson assumono un atteggiamento posturale caratteristico "camptocormico":
+
+Capo flesso sul tronco,
+Avambracci semiflessi e vicini al tronco,
+Ginocchia semiflesse.
+
+Disturbi dell'equilibrio
+
+Fattore di rischio per cadute a terra.
+Valutazione clinica: capacità di correggere una spinta all’indietro durante la visita.
+Terapia: i disturbi dell’equilibrio non rispondono alla terapia dopaminergica.
+Gestione: fisiochinesiterapia (importante per la gestione del disturbo).
+
+Valutazione del rischio di caduta: scala di Tinetti.
+
+Deterioramento da fine dose (wearing off)
+Dopo un numero variabile di anni, quando il trattamento con levodopa non è più in grado di fornire un controllo motorio stabile, 
+i pazienti incominciano ad avvertire la fine dell’effetto della singola somministrazione orale del farmaco.
+
+Fenomeni motori associati:
+Discinesie (complicanza frequente del trattamento dopaminergico),
+Fluttuazioni motorie.
+Dati epidemiologici:
+
+Dopo 10 anni dall’introduzione della terapia, la maggior parte dei pazienti è affetta da discinesie.
+Fattori associati alle discinesie:
+Dosaggio della levodopa,
+Gravità della malattia,
+Età di esordio.
+
+Tipologie di discinesie
+Discinesie da picco dose:
+
+Compaiono in corrispondenza del picco di concentrazione plasmatica di levodopa,
+Movimenti involontari che coinvolgono:
+Capo,
+Arti,
+Tronco,
+Muscoli respiratori.
+
+Discinesie difasiche:
+Movimenti involontari coreo-atetosici,
+Si manifestano nella fase di transizione on-off (e viceversa),
+Possono essere di entità variabile.
+
+Discinesie di plateau:
+Movimenti involontari che si manifestano nel periodo di sblocco motorio (on).
+
+Fluttuazioni motorie
+Si manifestano come:
+
+Aumentata latenza al raggiungimento della fase on (sblocco del movimento),
+Impossibilità a raggiungere l’on (fenomeno no-on),
+Deterioramento da fine dose (wearing-off):
+
+Prevedibile,
+Include:
+
+Acinesia notturna,
+Acinesia al risveglio,
+Fasi off (blocchi motori) imprevedibili.
+
+Sintomi non motori
+Nella malattia di Parkinson possono presentarsi anche fenomeni non motori, 
+che possono esordire molti anni prima della comparsa dei sintomi motori.
+Frequenza: più spesso nelle fasi iniziali, con frequenza massima in quelle più avanzate.
+  Sintomi non motori più frequenti
+Disturbi vegetativi (alterazione delle funzioni dei visceri):
+Stipsi,
+Disturbi urinari (aumento della frequenza minzionale da svuotamento incompleto),
+Disturbi sessuali (modificazioni della libido, disfunzione erettile),
+Ipotensione ortostatica,
+Alterazioni della sudorazione (ipo- o iper-sudorazione).
+Disturbi dell’olfatto,
+Disturbi del sonno:
+Insonnia (dovuta principalmente a rigidità e nicturia),
+Ipersonnia diurna (dovuta principalmente al mancato riposo notturno).
+Disturbi dell’umore e della cognitività,
+Fatica,
+Dolori.
+
+Sindrome delle gambe senza riposo:
+Fastidio associato alla necessità di muovere le gambe continuamente,
+Tipicamente compare o si intensifica durante le ore serali e notturne.
+
+Sindrome da alterato comportamento in fase REM (REM Behavior Disorder, RBD):
+Il soggetto può muoversi mentre sogna (al contrario di quanto avviene fisiologicamente, 
+durante il sonno profondo i muscoli sono in completa atonia).
+
+Manifestazioni motorie:
+Vocalizzazioni,
+Gesti compiuti con le braccia (es. combattere, fare a pugni, scalciare).
+Sembra che il paziente interagisca con il proprio sogno.
+
+Disturbi dell’umore
+Depressione:
+Caratteristica non solo delle fasi avanzate, ma anche di quelle iniziali.
+Spesso si manifesta anni prima dell’esordio dei disturbi motori.
+Diagnosi: non sempre facile, perché alcuni segni si sovrappongono a quelli della malattia di Parkinson 
+(es. affaticamento, ipomimia, apatia).
+
+Sintomi:
+Umore deflesso,
+Affaticamento,
+Disturbi del sonno,
+Modificazioni dell’appetito,
+Disturbi di memoria.
+
+Disturbi d’ansia:
+Sintomo molto comune,
+Descritto come senso di apprensione, paura, preoccupazione.
+Può precedere di anni i disturbi motori,
+Si associa a sintomi vegetativi, somatici e cognitivi.
+Andamento variabile: può associarsi alle fluttuazioni motorie,
+Presente durante le fasi di blocco motorio off.
+
+Apatia:
+Spesso associata a depressione (circa nel 20% dei casi),
+
+Manifestazioni:
+Stati d’indifferenza emotiva,
+Mancanza di volontà a svolgere o intraprendere attività.
+
+Disturbo ossessivo-compulsivo:
+Comportamenti ripetitivi mirati alla ricerca di piacere e gratificazione personale,
+
+Esempi:
+Assunzione eccessiva di cibo,
+Gioco d’azzardo,
+Shopping,
+Ipersessualità,
+Dipendenza da internet.
+Si manifestano in una minoranza di pazienti, spesso durante l’effetto dei farmaci dopaminergici.
+
+Deliri psicotici:
+Convinzioni non consistenti con la realtà,
+A volte correlate alle allucinazioni.
+
+Allucinazioni:
+Prevalentemente visive,
+Più raramente uditive o olfattive,
+Il paziente vede oggetti, persone o animali inesistenti.
+
+Disturbi cognitivi
+Si manifestano in tutte le fasi della malattia, ma soprattutto nello stadio avanzato e negli anziani.
+Se compaiono precocemente (entro un anno dall’esordio dei sintomi motori), si può parlare di malattia 
+da corpi di Lewy (DLB), caratterizzata da:
+
+Allucinazioni visive,
+Fluttuazioni delle prestazioni cognitive.
+
+Funzioni cognitive coinvolte:
+Attenzione,
+Capacità visuo-spaziali,
+Memoria,
+Funzioni esecutive (es. capacità di pianificare, passare da una strategia all’altra).
+
+Deficit specifici
+"Memoria di lavoro":
+
+Sistema di ripasso delle informazioni appena acquisite,
+Compromissioni nelle operazioni di recall e dating.
+Non si verifica una perdita delle tracce mnesiche, ma:
+
+Difficoltà nell’accesso ai dati memorizzati,
+Migliore capacità di richiamo attraverso il riconoscimento (in presenza di elementi esterni 
+che facilitino la ricerca del materiale da rievocare).
+
+I pazienti con malattia di Parkinson non perdono i ricordi immagazzinati, ma riscontrano una difficoltà 
+ad elaborare e mettere in atto spontaneamente le strategie adeguate per accedere a tali ricordi.";
+
+hash_table[11.11.4 La diagnosi] = R "La diagnosi di malattia di Parkinson è prettamente clinica: 
+il medico neurologo formula un’ipotesi diagnostica attraverso:
+Storia clinica (raccolta dal paziente e dai familiari),
+Valutazione di sintomi e segni neurologici.
+Esami strumentali
+Gli esami strumentali sono fondamentali per la diagnosi clinica e per escludere altre patologie simili, 
+soprattutto nelle fasi iniziali. 
+
+Tra questi:
+Risonanza magnetica nucleare ad alto campo,
+SPECT DATscan,
+PET cerebrale,
+
+Scintigrafia del miocardio.
+
+Patologie da escludere (diagnosi differenziale)
+1. Parkinsonismi primari
+Atrofia multi-sistemica (MSA),
+Paralisi sopranucleare progressiva (PSP),
+Degenerazione corticobasale (CBD),
+Demenza frontotemporale (FTD).
+Caratteristiche comuni:
+
+Scarsa o nulla risposta alla terapia dopaminergica,
+Sintomi tendono ad essere simmetrici,
+Sintomi "assili" (disturbi di deambulazione ed equilibrio) compaiono più precocemente,
+Evoluzione della sintomatologia più rapida,
+In alcune forme: disturbi cognitivi e/o vegetativi precoci.
+
+2. Tremore essenziale
+Causa non nota,
+Assenza di segni di rigidità o bradicinesia,
+Tremore:
+Non si manifesta a riposo (a differenza del Parkinson),
+Compare durante il movimento (es. quando il paziente porta una tazzina alla bocca).
+
+3. Parkinsonismi farmaco-indotti
+Dovuti all’azione di farmaci che possono indurre sintomi "parkinsoniani" in persone non affette 
+dalla malattia o aggravarla in pazienti già affetti.
+
+Farmaci responsabili:
+Antipsicotici tipici (es. aloperidolo, clorpromazina, flufenazina),
+Farmaci antivomito (es. metoclopramide, levosulpiride),
+Farmaci antipertensivi (es. eserpina, alfa-metil-dopa).
+
+
+4. Parkinsonismo da idrocefalo
+
+Caratteristiche:
+
+Marcia difficoltosa a base allargata (atassia della marcia),
+Instabilità posturale,
+Deterioramento mentale,
+Incontinenza urinaria.
+
+Causa: accumulo di liquor che comprime il tessuto nervoso circostante.
+Diagnosi: TAC o RMN (ingrandimento dei ventricoli cerebrali, senza dilatazione dei solchi corticali).
+Trattamento: neurochirurgico (posizionamento di una valvola di deflusso extracranico).
+
+Altre patologie neurologiche da escludere
+
+Parkinsonismo vascolare,
+Malattia di Wilson,
+Malattia di Alzheimer,
+Malattia di Huntington,
+Disordini da neurodegenerazione con accumulo cerebrale di ferro (NBIA),
+Tumori cerebrali,
+Disordini da alterato metabolismo del calcio.
+
+Ecco il testo originale estratto dal PDF **C336.pdf** (in italiano):
+
+---
+
+**Capitolo 11 | Il sistema nervoso e la riabilitazione neuromotoria | 337**
+
+---
+### **Stimolazione cerebrale profonda**
+- **Metodica** che **non cura la malattia**, ma dimostra **benefici** in relazione a **disturbi non altrimenti trattabili** in modo soddisfacente, come:
+  - **Tremore essenziale**,
+  - **Distonia**,
+  - **Dolore cronico**,
+  - **Disturbo ossessivo-compulsivo**,
+  - **Depressione maggiore**.
+
+- **Utilizzo attuale**:
+  - Per pazienti i cui **sintomi non rispondono più adeguatamente ai farmaci**,
+  - Oppure in caso di **gravi effetti collaterali** da farmaci.
+
+---
+---
+## **11.11.7 La riabilitazione**
+
+Alla **terapia farmacologica** viene **costantemente e diffusamente affiancata la fisiokinesiterapia**, **fin dalle prime manifestazioni cliniche** della malattia, con l’obiettivo di:
+- **Contrastare alcuni sintomi**,
+- **Prevenire i danni secondari**.
+
+---
+### **Obiettivi della riabilitazione**
+La malattia produce una **"dis-regolazione" del movimento**, quindi la riabilitazione diventa un **costante e sistematico "riallenamento" al movimento**, con l’obiettivo di contrastare:
+- **Lentezza**,
+- **Scarsa fluidità**,
+- **Mancanza di coordinazione**.
+
+---
+### **Effetti della rigidità e del rallentamento motorio**
+- **Modificazioni della postura** (atteggiamento in stazione eretta),
+- **Alterazioni della deambulazione**,
+- **Compromissione dell’equilibrio**,
+- **Ripercussioni sulla colonna vertebrale e sulle articolazioni** (che si "fissano" in posizioni viziate).
+
+**Obiettivo degli esercizi**: **correggere questi atteggiamenti** e **prevenire l’insorgere di patologie dolorose** a carico dei vari segmenti ossei.
+
+---
+### **Tremore**
+- **Ben poco è fattibile** per contrastarlo direttamente,
+- **Benefici indiretti**: miglioramento della **performance fisica**,
+  - Il paziente acquista **maggiore sicurezza nel movimento**,
+  - Miglioramento del **tono dell’umore**,
+  - Riduzione dell’**ansia**.
+
+---
+---
+### **Programma riabilitativo**
+Gli esercizi proposti rappresentano una **sintesi di un programma riabilitativo più ampio**, strutturato per essere eseguito **al proprio domicilio**.
+
+**Suddivisione degli esercizi in base agli obiettivi**:
+
+1. **Esercizi di allungamento e mobilizzazione**:
+   - **Prevenzione delle retrazioni muscolotendinee** a carico delle articolazioni,
+   - **Prevenzione dell’insorgenza di patologie dolorose ossee**,
+   - **Correzione degli atteggiamenti posturali viziati**.
+
+2. **Esercizi funzionali e aerobici (cardio)**:
+   - Miglioramento della **capacità di cambiare posizione** (sdraiata, seduta, in piedi),
+   - Esecuzione di **gesti della vita quotidiana** (es. girarsi nel letto).
+
+3. **Esercizi di equilibrio**:
+   - **Prevenzione delle cadute**.
+
+4. **Esercizi di coordinazione**:
+   - Miglioramento della **fluidità** e della **precisione del movimento**.
+
+5. **Esercizi di potenziamento muscolare**:
+   - **Mantenimento del tono e del trofismo muscolare**,
+   - **Assistenza ai movimenti**,
+   - **Diminuzione dell’impatto negativo della rigidità muscolare**.
+
+---
+### **Esempi di esercizi di potenziamento**
+- Spingere fino a **salire sulle dita dei piedi**,
+- **Squat modificati**,
+- **Alzarsi e sedersi ripetutamente su una sedia**.
+
+---
+**Figura 11.21**: *Stimolazione cerebrale profonda*.
+
+
+Ecco il testo originale estratto dal PDF C338.pdf (in italiano):
+
+338 | Parte Seconda | Anatomia e fisiologia, metodologie e tecniche fisioterapiche
+
+Gli esercizi di potenziamento muscolare includono anche:
+
+Applicare pesi alle caviglie e ai polsi (a casa o durante una passeggiata),
+Push-up (flessioni),
+Push-up a muro.
+
+Benefici dell’esercizio fisico
+
+Non è una cura, ma può aiutare le persone affette da malattia di Parkinson:
+
+A livello muscolare: esercitare un maggiore controllo su tutti i distretti muscolari,
+Aumentando la forza nei muscoli deficitari,
+Migliorando l’estensibilità muscolare nel suo insieme,
+Facilitando il movimento nella sua globalità.
+
+
+L’innovazione nella riabilitazione: l’utilizzo della console Wii
+
+Ultima frontiera riguardo all’attività motoria quotidiana,
+Miglioramenti consistenti e rilevanti della qualità della vita (sintomi motori e psichici) nei pazienti che effettuano un programma riabilitativo che preveda:
+Almeno tre volte a settimana il gioco a Wii Sports,
+Attività virtuali come:
+Tennis,
+Bowling,
+Pugilato,
+Altre attività sportive.
+";
+
+    hashTable[key] = value;
+
+    // Odczyt
+    std::cout << "Klucz: " << key << "\n\n";
+    std::cout << "Wartość:\n";
+    std::cout << hashTable[key] << std::endl;
+
+    return 0;
+}
