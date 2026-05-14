@@ -1,3 +1,67 @@
+// action == prompt
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+    string action;
+    bool dragonAlive = true;
+    bool playerAlive = true;
+
+    cout << "=== TEXT RPG ===\n";
+    cout << "Ти зайшов у печеру дракона.\n";
+
+    while (playerAlive && dragonAlive) {
+
+cout << "\nЩо ти хочеш зробити?\n";
+cout << "attack / talk / run / heal\n";
+        getline(cin, action);
+
+        if (action == "attack") {
+
+            cout << "Ти атакував дракона!\n";
+            cout << "Дракон переможений!\n";
+
+            dragonAlive = false;
+        }
+
+        else if (action == "talk") {
+
+            cout << "Дракон каже: 'Іди звідси, людино.'\n";
+        }
+
+        else if (action == "heal") {
+
+            cout << "Ти випив магічне зілля.\n";
+        }
+
+        else if (action == "run") {
+
+            cout << "Ти втік із печери.\n";
+            playerAlive = false;
+        }
+
+        else {
+
+            cout << "Невідома команда.\n";
+        }
+    }
+
+    if (!dragonAlive) {
+
+        cout << "\nТи врятував королівство!\n";
+    }
+
+    if (!playerAlive && dragonAlive) {
+
+        cout << "\nГру завершено.\n";
+    }
+
+    return 0;
+}
+
 11.1 Concetti introduttivi
 In tutti gli animali (ad eccezione delle spugne), la capacità di:
 ricevere,
@@ -213,25 +277,26 @@ Le aree funzionali sono distinte in tre categorie principali:
 Aree sensoriali:
 Ricevono segnali provenienti dagli organi di senso.
 
-Aree motorie:
-Controllano i movimenti volontari.
+if (prompt == "aree motorie")
+cout "Controllano i movimenti volontari./n";
 
-Aree associative:
-Mettono in connessione aree sensoriali e motorie,
+if (prompt == "Aree associative")
+cout R"Mettono in connessione aree sensoriali e motorie,
 Sono responsabili delle attività cognitive superiori:
 Pensiero,
 Apprendimento,
 Linguaggio,
 Memoria,
 Giudizio,
-Personalità.
+Personalità.";
 
-Localizzazione delle aree sensoriali:
+if (prompt == "Localizzazione delle aree sensoriali /n");
 
-Lobi occipitali: sede dei centri della vista,
+cout R" Lobi occipitali: sede dei centri della vista,
 Lobi temporali: sede dei centri dell’udito,
-Lobi parietali (parte anteriore, immediatamente dietro al solco centrale, che li separa dai lobi 
-frontali):
+Lobi parietali (parte anteriore, immediatamente dietro al solco centrale, 
+che li separa dai lobi 
+frontali)";
 
 Area sensoriale generale,
 Riceve, spazialmente ordinate, le sensazioni di:
