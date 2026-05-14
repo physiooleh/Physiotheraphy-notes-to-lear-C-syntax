@@ -1,3 +1,5 @@
+// line183
+
 #include <iostream>
 #include <unordered_map>
 #include <string>
@@ -7,43 +9,41 @@ unordered_map<string, string> hashTable;
 
 string key = "11.11 Eziopatogenesi";
 
-hashTable[11.11 Eziopatogenesi] = R" Le strutture coinvolte nella malattia di Parkinson si trovano in aree profonde del cervello, 
-note come gangli della base (nuclei caudato, putamen e pallido), che partecipano alla corretta esecuzione dei 
-movimenti (ma non solo).
-La patologia si manifesta quando la produzione di dopamina nel cervello cala consistentemente.
-Cause della riduzione di dopamina
-Degenerazione dei neuroni nella "sostanza nera" (la perdita cellulare è superiore al 60% all’esordio dei sintomi).
-Accumuli di alfa-sinucleina (dal midollo al cervello), probabile responsabile della diffusione della malattia in 
-tutto il cervello.
-La durata della fase preclinica (il periodo tra l’inizio della degenerazione neuronale e l’esordio dei sintomi motori) 
-non è nota, ma alcuni studi la datano intorno a 5 anni.
-Fattori eziologici
-A oggi, le cause della patologia non sono conosciute. Sembra che concorrano multipli fattori, principalmente di carattere:
+hashTable[11.11 Eziopatogenesi] = R "Le strutture coinvolte nella malattia di 
+Parkinson si trovano in aree profonde del cervello, note come gangli della base 
+(nuclei caudato, putamen e pallido), che partecipano alla corretta esecuzione dei 
+movimenti (ma non solo). La patologia si manifesta quando la produzione di dopamina 
+nel cervello cala consistentemente. Cause della riduzione di dopamina:
+Degenerazione dei neuroni nella 'sostanza nera' (la perdita cellulare è superiore al 
+60% all’esordio dei sintomi). Accumuli di alfa-sinucleina (dal midollo al cervello), 
+probabile responsabile della diffusione della malattia in tutto il cervello.
+La durata della fase preclinica (il periodo tra l’inizio della degenerazione 
+neuronale e l’esordio dei sintomi motori) non è nota, ma alcuni studi la datano 
+intorno a 5 anni.";
 
+hashTable[Fattori eziologici] = R "A oggi, le cause della patologia non sono 
+conosciute. Sembra che concorrano multipli fattori, principalmente di carattere:
 Genetico:
 Alcune mutazioni sono associate alla malattia.
-
 Geni individuati:
 Alfa-sinucleina (PARK 1/PARK 4),
 Parkina (PARK-2),
 PINK1 (PARK-6),
 DJ-1 (PARK-7),
 LRRK2 (PARK-8),
-
 Glucocerebrosidasia GBA.
 Circa il 20% dei pazienti presenta una storia familiare positiva.
-I familiari di persone affette hanno un rischio lievemente superiore di sviluppare la patologia rispetto alla popolazione generale.
+I familiari di persone affette hanno un rischio lievemente superiore di sviluppare la 
+patologia rispetto alla popolazione generale.
 Tossico:
 Esposizione lavorativa a:
 Pesticidi (es. Paraquat),
 Idrocarburi-solventi (es. trielina),
 Metalli pesanti (ferro, zinco, rame) in professioni come saldatori.
-
 Il fumo di sigaretta sembra essere un fattore protettivo (riduce la comparsa della malattia).
 ";
 
-string key = "11.11.3 I sintomi"; 
-string value = R" Sintomi motori
+hashTable[11.11.3 I sintomi] = R "Sintomi motori: 
 I principali sintomi motori della malattia di Parkinson sono:
 Tremore a riposo,
 Rigidità,
@@ -52,7 +52,8 @@ In fase avanzata compaiono:
 Instabilità posturale (perdita di equilibrio),
 Discinesie,
 Fluttuazioni motorie.
-Caratteristica: i sintomi si presentano in modo asimmetrico (un lato del corpo è più interessato dell’altro). 
+Caratteristica: i sintomi si presentano in modo asimmetrico 
+(un lato del corpo è più interessato dell’altro). 
 Tremore
 Può essere un sintomo d’esordio, ma spesso non evolve nel corso degli anni.
 Non è invalidante e non è presente in tutti i pazienti.
@@ -61,10 +62,11 @@ Spesso interessa una mano, ma può coinvolgere anche:
 Piedi,
 Mandibola.
 È più evidente su un lato.
-Frequenza: 5-6 movimenti al secondo (oscillazione ben visibile anche mentre il paziente cammina).
-Un altro tipo di tremore riferito nelle fasi iniziali della malattia è il "tremore interno": 
+Frequenza: 5-6 movimenti al secondo (oscillazione ben visibile anche mentre il paziente 
+cammina).
+Un altro tipo di tremore riferito nelle fasi iniziali della malattia è il "tremore 
+interno": 
 questa sensazione è avvertita dal paziente, ma non è visibile.
-
 Rigidità
 Aumento involontario del tono muscolare, può essere il primo sintomo della malattia.
 Spesso esordisce da un solo lato del corpo.
@@ -72,157 +74,100 @@ Può manifestarsi a livello di:
 arti,
 collo,
 tronco.
-Segno clinico: la riduzione dell’oscillazione pendolare degli arti superiori durante il cammino, 
-associata a lentezza dei movimenti.
-Caratteristiche della rigidità:
-Extrapiramidale o plastica:
-Interessa sia i muscoli agonisti che gli antagonisti,
-La resistenza opposta alla mobilizzazione passiva è costante,
-Non si osserva il ritorno del segmento disteso alla posizione di partenza.
-Bradicinesia e Acinesia
-Bradicinesia: rallentamento nell’esecuzione dei movimenti e dei gesti.
-Acinesia: difficoltà a iniziare i movimenti spontanei.
+Segno clinico: la riduzione dell’oscillazione pendolare degli arti superiori durante 
+il cammino, associata a lentezza dei movimenti.
+Caratteristiche della rigidità: Extrapiramidale o plastica (Interessa sia i muscoli 
+agonisti che gli antagonisti, la resistenza opposta alla mobilizzazione passiva è 
+costante, non si osserva il ritorno del segmento disteso alla posizione di partenza).
+Bradicinesia e Acinesia Bradicinesia: rallentamento nell’esecuzione dei movimenti e dei 
+gesti. Acinesia: difficoltà a iniziare i movimenti spontanei.
 Impatto sulla vita quotidiana:
+La maggior parte dei pazienti è consapevole della bradicinesia, spesso riferita come 
+sintomo fastidioso, rende lenti anche i movimenti più semplici, interferisce con 
+attività quotidiane come: lavarsi, vestirsi, camminare, passare da una posizione 
+all’altra (es. da seduti a in piedi), girarsi nel letto.",
 
-La maggior parte dei pazienti è consapevole della bradicinesia, spesso riferita come sintomo fastidioso,
-Rende lenti anche i movimenti più semplici,
-Interferisce con attività quotidiane come:
+hashTable[Test clinico] = R "Si evidenzia facendo compiere al soggetto movimenti di 
+manualità fine, I movimenti risultano: più impacciati, meno ampi, più rapidamente 
+esauribili, con la ripetizione, diventano quasi impercettibili.";
 
-lavarsi,
-vestirsi,
-camminare,
-passare da una posizione all’altra (es. da seduti a in piedi),
-girarsi nel letto.
+hashTable[Sintomi correlati alla bradicinesia] = R "Modificazione della grafia: diventa 
+più piccola (micrografia), scialorrea: aumento della quantità di saliva in bocca, 
+dovuta al rallentamento dei muscoli coinvolti nella deglutizione, ridotta espressione 
+del volto (ipomimia), instabilità posturale, sintomo tardivo che coinvolge l’asse del 
+corpo, si evidenzia quando la persona: cammina, cambia direzione durante il cammino.";
 
-Test clinico:
-Si evidenzia facendo compiere al soggetto movimenti di manualità fine,
-I movimenti risultano:
-
-più impacciati,
-meno ampi,
-più rapidamente esauribili,
-Con la ripetizione, diventano quasi impercettibili.
-
-
-Sintomi correlati alla bradicinesia
-
-Modificazione della grafia: diventa più piccola (micrografia),
-Scialorrea: aumento della quantità di saliva in bocca, dovuta al rallentamento dei muscoli 
-coinvolti nella deglutizione,
-Ridotta espressione del volto (ipomimia).
-Instabilità posturale
-Sintomo tardivo che coinvolge l’asse del corpo.
-Si evidenzia quando la persona:
-cammina,
-cambia direzione durante il cammino.
-
-Cause: riduzione dei riflessi di raddrizzamento, per cui il soggetto non è in grado di correggere 
-spontaneamente eventuali squilibri.
-Baricentro del corpo: appare spostato in avanti,
-Andatura classica: il paziente "insegue" il proprio baricentro (andatura festinante).
-
+hashTable[Cause] = R "riduzione dei riflessi di raddrizzamento, per cui il soggetto non 
+è in grado di correggere spontaneamente eventuali squilibri. Baricentro del corpo: 
+appare spostato in avanti, andatura classica: il paziente "insegue" il proprio 
+baricentro (andatura festinante).
 Globalmente, questi pazienti hanno un atteggiamento posturale caratteristico.
-Gli pazienti con malattia di Parkinson assumono un atteggiamento posturale caratteristico "camptocormico":
+Gli pazienti con malattia di Parkinson assumono un atteggiamento posturale 
+caratteristico "camptocormico": capo flesso sul tronco, avambracci semiflessi e vicini 
+al tronco, ginocchia semiflesse.";
 
-Capo flesso sul tronco,
-Avambracci semiflessi e vicini al tronco,
-Ginocchia semiflesse.
+hashTable[Disturbi dell'equilibrio] = cout >>"Fattore di rischio per cadute a terra /n";
+hashTable[Valutazione clinica] = cout >>"capacità di correggere una spinta all’indietro 
+durante la visita /n";
 
-Disturbi dell'equilibrio
-
-Fattore di rischio per cadute a terra.
-Valutazione clinica: capacità di correggere una spinta all’indietro durante la visita.
-Terapia: i disturbi dell’equilibrio non rispondono alla terapia dopaminergica.
-Gestione: fisiochinesiterapia (importante per la gestione del disturbo).
-
+hashTable[Terapia] = cout>> "i disturbi dell’equilibrio non rispondono alla terapia 
+dopaminergica./n";
+hashTable[Gestione] = R "fisiochinesiterapia (importante per la gestione del disturbo).
 Valutazione del rischio di caduta: scala di Tinetti.
-
 Deterioramento da fine dose (wearing off)
-Dopo un numero variabile di anni, quando il trattamento con levodopa non è più in grado di fornire un controllo motorio stabile, 
-i pazienti incominciano ad avvertire la fine dell’effetto della singola somministrazione orale del farmaco.
+Dopo un numero variabile di anni, quando il trattamento con levodopa non è più in 
+grado di fornire un controllo motorio stabile, i pazienti incominciano ad avvertire la 
+fine dell’effetto della singola somministrazione orale del farmaco.";
 
-Fenomeni motori associati:
-Discinesie (complicanza frequente del trattamento dopaminergico),
-Fluttuazioni motorie.
-Dati epidemiologici:
+hashTable[Fenomeni motori associati] = cout>> "Discinesie (complicanza frequente del 
+trattamento dopaminergico), fluttuazioni motorie./n";
+hashTable[Dati epidemiologici] = cout >> "Dopo 10 anni dall’introduzione della terapia, 
+la maggior parte dei pazienti è affetta da discinesie.";
+hashTable[Fattori associati alle discinesie] = "Dosaggio della levodopa, gravità della 
+malattia, età di esordio.";
 
-Dopo 10 anni dall’introduzione della terapia, la maggior parte dei pazienti è affetta da discinesie.
-Fattori associati alle discinesie:
-Dosaggio della levodopa,
-Gravità della malattia,
-Età di esordio.
-
-Tipologie di discinesie
-Discinesie da picco dose:
-
+hashTable[Tipologie di discinesie] = R "Discinesie da picco dose:
 Compaiono in corrispondenza del picco di concentrazione plasmatica di levodopa,
-Movimenti involontari che coinvolgono:
-Capo,
-Arti,
-Tronco,
-Muscoli respiratori.
-
-Discinesie difasiche:
-Movimenti involontari coreo-atetosici,
-Si manifestano nella fase di transizione on-off (e viceversa),
-Possono essere di entità variabile.
-
-Discinesie di plateau:
-Movimenti involontari che si manifestano nel periodo di sblocco motorio (on).
-
+Movimenti involontari che coinvolgono: capo, arti, tronco, muscoli respiratori.
+Discinesie difasiche: movimenti involontari coreo-atetosici, si manifestano nella fase 
+di transizione on-off (e viceversa), possono essere di entità variabile.
+Discinesie di plateau: movimenti involontari che si manifestano nel periodo di sblocco 
+motorio (on).
 Fluttuazioni motorie
-Si manifestano come:
+Si manifestano come: aumentata latenza al raggiungimento della fase on (sblocco del 
+movimento), impossibilità a raggiungere l’on (fenomeno no-on), deterioramento da fine 
+dose (wearing-off): prevedibile 
+include: acinesia notturna, acinesia al risveglio, fasi off (blocchi motori) 
+imprevedibili.
 
-Aumentata latenza al raggiungimento della fase on (sblocco del movimento),
-Impossibilità a raggiungere l’on (fenomeno no-on),
-Deterioramento da fine dose (wearing-off):
+hashTable[Sintomi non motori] = R "nella malattia di Parkinson possono presentarsi 
+anche fenomeni non motori, che possono esordire molti anni prima della comparsa dei 
+sintomi motori. Frequenza: più spesso nelle fasi iniziali, con frequenza massima in 
+quelle più avanzate";
+hashTable[Sintomi non motori più frequenti] = R "Disturbi vegetativi (alterazione 
+delle funzioni dei visceri): stipsi, disturbi urinari (aumento della frequenza 
+minzionale da svuotamento incompleto), disturbi sessuali (modificazioni della libido, 
+disfunzione erettile), ipotensione ortostatica, alterazioni della sudorazione 
+(ipo- o iper-sudorazione), disturbi dell’olfatto";
+hashTable[Disturbi del sonno] = R "Insonnia (dovuta principalmente a rigidità e 
+nicturia), ipersonnia diurna (dovuta principalmente al mancato riposo notturno).
+hashTable[Disturbi dell’umore e della cognitività] = cout>>"Fatica, dolori./n";
 
-Prevedibile,
-Include:
+hashTable[Sindrome delle gambe senza riposo] = R "Fastidio associato alla necessità di 
+muovere le gambe continuamente, tipicamente compare o si intensifica durante le ore 
+serali e notturne.";
 
-Acinesia notturna,
-Acinesia al risveglio,
-Fasi off (blocchi motori) imprevedibili.
+hashTable[Sindrome da alterato comportamento in fase REM (REM Behavior Disorder, RBD)] =
+R "Il soggetto può muoversi mentre sogna (al contrario di quanto avviene 
+fisiologicamente, durante il sonno profondo i muscoli sono in completa atonia)."
+Manifestazioni motorie: vocalizzazioni, gesti compiuti con le braccia 
+(es. combattere, fare a pugni, scalciare), Sembra che il paziente interagisca con il 
+proprio sogno.
 
-Sintomi non motori
-Nella malattia di Parkinson possono presentarsi anche fenomeni non motori, 
-che possono esordire molti anni prima della comparsa dei sintomi motori.
-Frequenza: più spesso nelle fasi iniziali, con frequenza massima in quelle più avanzate.
-  Sintomi non motori più frequenti
-Disturbi vegetativi (alterazione delle funzioni dei visceri):
-Stipsi,
-Disturbi urinari (aumento della frequenza minzionale da svuotamento incompleto),
-Disturbi sessuali (modificazioni della libido, disfunzione erettile),
-Ipotensione ortostatica,
-Alterazioni della sudorazione (ipo- o iper-sudorazione).
-Disturbi dell’olfatto,
-Disturbi del sonno:
-Insonnia (dovuta principalmente a rigidità e nicturia),
-Ipersonnia diurna (dovuta principalmente al mancato riposo notturno).
-Disturbi dell’umore e della cognitività,
-Fatica,
-Dolori.
-
-Sindrome delle gambe senza riposo:
-Fastidio associato alla necessità di muovere le gambe continuamente,
-Tipicamente compare o si intensifica durante le ore serali e notturne.
-
-Sindrome da alterato comportamento in fase REM (REM Behavior Disorder, RBD):
-Il soggetto può muoversi mentre sogna (al contrario di quanto avviene fisiologicamente, 
-durante il sonno profondo i muscoli sono in completa atonia).
-
-Manifestazioni motorie:
-Vocalizzazioni,
-Gesti compiuti con le braccia (es. combattere, fare a pugni, scalciare).
-Sembra che il paziente interagisca con il proprio sogno.
-
-Disturbi dell’umore
-Depressione:
-Caratteristica non solo delle fasi avanzate, ma anche di quelle iniziali.
-Spesso si manifesta anni prima dell’esordio dei disturbi motori.
-Diagnosi: non sempre facile, perché alcuni segni si sovrappongono a quelli della malattia di Parkinson 
-(es. affaticamento, ipomimia, apatia).
-
+hashTable[Disturbi dell’umore] = R "depressione: caratteristica non solo delle fasi 
+avanzate, ma anche di quelle iniziali. Spesso si manifesta anni prima dell’esordio dei 
+disturbi motori. Diagnosi: non sempre facile, perché alcuni segni si sovrappongono a 
+quelli della malattia di Parkinson (es. affaticamento, ipomimia, apatia).
 Sintomi:
 Umore deflesso,
 Affaticamento,
@@ -230,22 +175,14 @@ Disturbi del sonno,
 Modificazioni dell’appetito,
 Disturbi di memoria.
 
-Disturbi d’ansia:
-Sintomo molto comune,
-Descritto come senso di apprensione, paura, preoccupazione.
-Può precedere di anni i disturbi motori,
-Si associa a sintomi vegetativi, somatici e cognitivi.
-Andamento variabile: può associarsi alle fluttuazioni motorie,
-Presente durante le fasi di blocco motorio off.
+hashTable[Disturbi d’ansia] = R "sintomo molto comune, descritto come senso di 
+apprensione, paura, preoccupazione. Può precedere di anni i disturbi motori, si associa 
+a sintomi vegetativi, somatici e cognitivi. Andamento variabile: può associarsi alle 
+fluttuazioni motorie, Presente durante le fasi di blocco motorio off.
+Apatia: Spesso associata a depressione (circa nel 20% dei casi), m,anifestazioni:
+stati d’indifferenza emotiva, mancanza di volontà a svolgere o intraprendere attività.";
 
-Apatia:
-Spesso associata a depressione (circa nel 20% dei casi),
-
-Manifestazioni:
-Stati d’indifferenza emotiva,
-Mancanza di volontà a svolgere o intraprendere attività.
-
-Disturbo ossessivo-compulsivo:
+hashTable[Disturbo ossessivo-compulsivo]
 Comportamenti ripetitivi mirati alla ricerca di piacere e gratificazione personale,
 
 Esempi:
