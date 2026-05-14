@@ -3,64 +3,32 @@
 #include <string>
 
 using namespace std;
-
 int main() {
+string prompt;
+bool vincereConcorso = true;
+bool guadagnareMeglio = true;
+while (playerAlive && dragonAlive) {
 
-    string action;
-    bool dragonAlive = true;
-    bool playerAlive = true;
-
-    cout << "=== TEXT RPG ===\n";
-    cout << "Ти зайшов у печеру дракона.\n";
-
-    while (playerAlive && dragonAlive) {
-
-cout << "\nЩо ти хочеш зробити?\n";
-cout << "attack / talk / run / heal\n";
+cout << "\n Scrivi qua lo prompt con la frase \n";
         getline(cin, action);
-
-        if (action == "attack") {
-
-            cout << "Ти атакував дракона!\n";
-            cout << "Дракон переможений!\n";
-
-            dragonAlive = false;
+        if (prompt == "-------") {
+            cout << "-------\n";
+            cout << "-------\n";
+vincereConcorso = true;
         }
-
-        else if (action == "talk") {
-
-            cout << "Дракон каже: 'Іди звідси, людино.'\n";
-        }
-
-        else if (action == "heal") {
-
-            cout << "Ти випив магічне зілля.\n";
-        }
-
-        else if (action == "run") {
-
-            cout << "Ти втік із печери.\n";
-            playerAlive = false;
-        }
+        else if (action == " ----- ") {
+            cout << "-----\n";
+}
+else if (prompt == "----") {
+cout << "Ти втік із печери.\n";
+playerAlive = false;
+}
 
         else {
 
             cout << "Невідома команда.\n";
         }
     }
-
-    if (!dragonAlive) {
-
-        cout << "\nТи врятував королівство!\n";
-    }
-
-    if (!playerAlive && dragonAlive) {
-
-        cout << "\nГру завершено.\n";
-    }
-
-    return 0;
-}
 
 11.1 Concetti introduttivi
 In tutti gli animali (ad eccezione delle spugne), la capacità di:
@@ -831,18 +799,12 @@ Risposte motorie.
 
 
 
-11.6 Il sistema autonomo o vegetativo
-Funzione principale
-
-Contribuire ad assicurare la costante dell’ambiente interno dell’organismo (omeostasi),
-Attraverso meccanismi riflessi (indipendenti dalla volontà).
-
+else if (prompt == "11.6 Il sistema autonomo o vegetativo") {
+cout R "Funzione principale: contribuire ad assicurare la costante dell’ambiente interno dell’organismo (omeostasi),
+attraverso meccanismi riflessi (indipendenti dalla volontà).
 Meccanismo di funzionamento
-
 I recettori situati nei visceri trasmettono segnali al sistema nervoso centrale attraverso fibre afferenti che percorrono:
-
-Nervi cranici,
-Nervi spinali,
+nervi cranici, nervi spinali,
 
 Nel sistema nervoso centrale, i segnali vengono integrati a vari livelli,
 Le risposte elaborate sono trasmesse agli organi effettori, rappresentati da:
@@ -875,27 +837,14 @@ Caratteristiche generali:
 I due sistemi hanno effetti opposti (Tabelle 11.2 e 11.3),
 Vari organi sono innervati da entrambi i sistemi.
 
+// p303 Confronto tra l’organizzazione delle vie efferenti del: sistema nervoso somatico, sistema nervoso autonomo.
 
-
-
-
-
-
-
-
-Capitolo 11 | Il sistema nervoso e la riabilitazione neuromotoria | 303
-
-Figura 11.10:
-
-Confronto tra l’organizzazione delle vie efferenti del:
-
-Sistema nervoso somatico,
-Sistema nervoso autonomo.
-
-Differenza principale:
-
-Nel sistema nervoso somatico, i neuroni che innervano gli organi effettori sono situati entro il sistema nervoso centrale,
-Nel sistema nervoso autonomo, i neuroni che innervano gli organi effettori sono situati nei gangli, al di fuori del sistema nervoso centrale.
+else if (prompt == "Differenza principale") {
+cout>> "Nel sistema nervoso somatico, i neuroni che innervano gli organi effettori (muscoli scheletrici) 
+sono situati entro il sistema nervoso centrale, /n";
+cout>> "Nel sistema nervoso autonomo, i neuroni che innervano gli organi effettori (muscoli lisci, ghiandole, 
+muscolo cardiaco) sono situati nei gangli, al di fuori del sistema nervoso centrale.";
+}
 
 
 Sistema nervoso autonomo: organizzazione del sistema simpatico
@@ -911,202 +860,84 @@ Questi rami sboccano in due strutture poste ai lati della colonna vertebrale: i 
 Formate da gangli paravertebrali collegati da fibre nervose parallele alla colonna vertebrale (Fig. 11.11).
 
 
-Caratteristiche dei tronchi simpatici:
+else if (prompt == "Caratteristiche dei tronchi simpatici") {
+cout R "Si estendono sopra e sotto la regione da cui hanno origine le fibre pregangliari.
+Fibre postgangliari del sistema simpatico si dipartono dai gangli paravertebrali, raggiungono gli organi bersaglio attraverso i nervi simpatici.
+Eccezione: un certo numero di fibre pregangliari non si arresta nei gangli paravertebrali, proseguono raggiungendo altri gangli simpatici situati 
+in prossimità dei visceri innervati.";
+}
 
-Si estendono sopra e sotto la regione da cui hanno origine le fibre pregangliari.
+else if (prompt == "Sistema nervoso autonomo: organizzazione del sistema parasimpatico") {
+cout R "Neuroni pre-gangliari del sistema parasimpatico Localizzazione: mesencefalo, ponte, midollo allungato,
+regione sacrale del midollo spinale.";
+}
 
-Fibre postgangliari del sistema simpatico
+else if (prompt == "Percorso degli assoni") {
+cout>> "Emergono dal sistema nervoso centrale con: nervi cranici, mervi spinali sacrali. n";
 
-Si dipartono dai gangli paravertebrali,
-Raggiungono gli organi bersaglio attraverso i nervi simpatici.
-Eccezione:
-
-Un certo numero di fibre pregangliari non si arresta nei gangli paravertebrali,
-Proseguono raggiungendo altri gangli simpatici situati in prossimità dei visceri innervati.
-
-Sistema nervoso autonomo: organizzazione del sistema parasimpatico
-Neuroni pre-gangliari del sistema parasimpatico
-
-Localizzazione:
-
-Mesencefalo,
-Ponte,
-Midollo allungato,
-Regione sacrale del midollo spinale (Fig. 11.11).
-
-Percorso degli assoni:
-
-Emergono dal sistema nervoso centrale con:
-
-Nervi cranici,
-Nervi spinali sacrali.
-
-
-Gangli parasimpatici
-
-Differenza rispetto al sistema simpatico:
-
+else if (prompt == "Gangli parasimpatici") { 
+cout>>Differenza rispetto al sistema simpatico:
 A differenza della maggiore parte dei gangli simpatici, i gangli parasimpatici sono situati in prossimità degli organi innervati.
 
-
-
-
-
-
-
-
-
-
-Capitolo 11 | Il sistema nervoso e la riabilitazione neuromotoria | 303
-
-Figura 11.10:
-
-Confronto tra l’organizzazione delle vie efferenti del:
-
-(a) Sistema nervoso somatico,
-(b) Sistema nervoso autonomo.
-
-Differenza principale:
-
-Nel sistema nervoso somatico, i neuroni che innervano gli organi effettori (muscoli scheletrici) sono situati entro il sistema nervoso centrale,
-Nel sistema nervoso autonomo, i neuroni che innervano gli organi effettori (muscoli lisci, ghiandole, muscolo cardiaco) sono situati nei gangli, al di fuori del sistema nervoso centrale.
-
-
-Sistema nervoso autonomo: organizzazione del sistema simpatico
-Neuroni pre-gangliari del sistema simpatico
-
-Localizzazione: nei segmenti toracici e nei primi due o tre segmenti lombari del midollo spinale,
-Percorso delle fibre pregangliari:
-
-Escono attraverso le radici anteriori dei corrispondenti nervi spinali,
-Danno origine ai rami autonomi di tali nervi,
-Questi rami sboccano in due strutture poste ai lati della colonna vertebrale: i tronchi simpatici (o catene gangliari simpatiche),
-
-Formate da gangli paravertebrali collegati da fibre nervose parallele alla colonna vertebrale (Fig. 11.11).
-
-
-Caratteristiche dei tronchi simpatici:
-
-Si estendono sopra e sotto la regione da cui hanno origine le fibre pregangliari.
-
-Fibre postgangliari del sistema simpatico
-
-Si dipartono dai gangli paravertebrali,
-Raggiungono gli organi bersaglio attraverso i nervi simpatici.
-Eccezione:
-
-Un certo numero di fibre pregangliari non si arresta nei gangli paravertebrali,
-Proseguono raggiungendo altri gangli simpatici situati in prossimità dei visceri innervati.
-
-Sistema nervoso autonomo: organizzazione del sistema parasimpatico
-Neuroni pre-gangliari del sistema parasimpatico
-
-Localizzazione:
-
-Mesencefalo,
-Ponte,
-Midollo allungato,
-Regione sacrale del midollo spinale (Fig. 11.11).
-
-Percorso degli assoni:
-
-Emergono dal sistema nervoso centrale con:
-
-Nervi cranici,
-Nervi spinali sacrali.
-
-
-Gangli parasimpatici
-
-Differenza rispetto al sistema simpatico:
-
-A differenza della maggiore parte dei gangli simpatici, i gangli parasimpatici sono situati in prossimità degli organi innervati.
-
-
-
-
-
-
-
-
-
-
-Ecco il testo originale estratto dal PDF **C305.pdf** (in italiano):
-
----
 **Capitolo 11 | Il sistema nervoso e la riabilitazione neuromotoria | 305**
-
----
-
-Effetti del sistema simpatico e parasimpatico sugli organi effettori
-
-
+/* else if (prompt == "Effetti del sistema simpatico e parasimpatico sugli organi effettori") {
 | **Organo effettore** | **Sistema simpatico** | **Sistema parasimpatico** |
 |---|---|---|
-| **Cuore** | Aumenta la frequenza e la forza di contrazione | Diminuisce la frequenza, non agisce direttamente sulla forza di contrazione |
-| **Bronchi** | Dilata | Restringe |
-| **Iride** | Dilata la pupilla | Restringe la pupilla |
-| **Organi sessuali maschili** | Causa vasocostrizione, causa l’eiaculazione | Causa vasodilatazione, causa erezione |
-| **Vasi sanguigni** | In genere causa vasocostrizione | Molti vasi sanguigni non sono innervati dal sistema parasimpatico |
-| **Ghiandole sudoripare** | Stimola | Non sono innervate dal sistema parasimpatico |
-| **Intestino** | Inibisce la motilità | Stimola motilità e secrezione |
-| **Fegato** | Stimola la demolizione del glicogeno con formazione di glucosio che viene immesso nel sangue | Nessun effetto |
-| **Tessuto adiposo** | Stimola la demolizione dei trigliceridi immagazzinati nel tessuto e l’immissione di acidi grassi nel sangue | Nessun effetto |
-| **Midollare delle ghiandole surrenali** | Stimola la secrezione di adrenalina e noradrenalina | Nessun effetto |
-| **Ghiandole salivari** | Riduce la secrezione salivare (densa e viscosa) | Aumenta la secrezione salivare (acquosa e abbondante) |
-| **Cute** | Vasocostrizione, erezione dei peli | Nessun effetto |
+cout>> "Cuore| Aumenta la frequenza e la forza di contrazione | Diminuisce la frequenza, non agisce direttamente sulla forza di contrazione| /n";
+cout>> "Bronchi| Dilata|Restringe| /n";
+cout>> "Iride| Dilata la pupilla| Restringe la pupilla |
+| Organi sessuali maschili | Causa vasocostrizione, causa l’eiaculazione | Causa vasodilatazione, causa erezione |
+| Vasi sanguigni | In genere causa vasocostrizione | Molti vasi sanguigni non sono innervati dal sistema parasimpatico |
+| Ghiandole sudoripare| Stimola | Non sono innervate dal sistema parasimpatico |
+| Intestino| Inibisce la motilità | Stimola motilità e secrezione |
+| Fegato | Stimola la demolizione del glicogeno con formazione di glucosio che viene immesso nel sangue | Nessun effetto |
+| Tessuto adiposo | Stimola la demolizione dei trigliceridi immagazzinati nel tessuto e l’immissione di acidi grassi nel sangue | Nessun effetto |
+| Midollare delle ghiandole surrenali | Stimola la secrezione di adrenalina e noradrenalina | Nessun effetto |
+| Ghiandole salivari | Riduce la secrezione salivare (densa e viscosa) | Aumenta la secrezione salivare (acquosa e abbondante) |
+| Cute | Vasocostrizione, erezione dei peli | Nessun effetto |
+*/
 
----
----
-## **11.7 Fisioterapia e patologie neurologiche**
+else if (prompt == "11.7 Fisioterapia e patologie neurologiche") {
+cout R "Definizione di riabilitazione (OMS): la riabilitazione è definita dall’Organizzazione Mondiale della Sanità (OMS) come:
+l’impiego di tutte le misure atte a ridurre l’impatto di condizioni generanti disabilità e handicap, per permettere alle persone 
+di vivere con la propria disabilità e raggiungere interazioni sociali ottimali.";
+}
 
-### **Definizione di riabilitazione (OMS)**
-La **riabilitazione** è definita dall’**Organizzazione Mondiale della Sanità (OMS)** come:
-> *l’impiego di tutte le misure atte a ridurre l’impatto di condizioni generanti disabilità e handicap, per permettere alle persone di vivere con la propria disabilità e raggiungere interazioni sociali ottimali*.
+else if (prompt == "Riabilitazione neuromotoria") {
+cout R "Obiettivi: Recupero delle funzioni motorie, apprendimento di strategie adattive in soggetti colpiti 
+da malattie neurologiche, miglioramento della qualità di vita in senso: fisico, emozionale, sociale,
+Riferimento: ICF (International Classification of Functioning, Disability and Health).";
 
----
-### **Riabilitazione neuromotoria**
-- **Obiettivi**:
-  - **Recupero delle funzioni motorie**,
-  - **Apprendimento di strategie adattive** in soggetti colpiti da **malattie neurologiche**,
-  - **Miglioramento della qualità di vita** in senso:
-    - **Fisico**,
-    - **Emozionale**,
-    - **Sociale**,
-- **Riferimento**: **ICF** (*International Classification of Functioning, Disability and Health*).
+else if (prompt == "Programma terapeutico") {
+cout>> "Punto di partenza: bilancio iniziale delle capacità motorie presenti, /n";
+cout R "Valutazione del funzionamento: utilizzando diverse scale, tra cui:
+FIM (Functional Independence Measure),
+Barthel Index.
+Definizione del PRI (Programma Riabilitativo Individuale) per ciascun paziente.";
+}
 
----
----
-### **Programma terapeutico**
-- **Punto di partenza**: **bilancio iniziale** delle **capacità motorie presenti**,
-- **Valutazione del funzionamento**: utilizzando **diverse scale**, tra cui:
-  - **FIM** (*Functional Independence Measure*),
-  - **Barthel Index**.
-- **Definizione del PRI** (*Programma Riabilitativo Individuale*) per **ciascun paziente**.
+else if (prompt == "Approccio al paziente neurologico") {
+cout>> "Multidisciplinare/multiprofessionale, Équipe dedicata, fisioterapista, logopedista, /n";
+cout>> "terapista occupazionale, tecnico ortopedico, specialisti medici: fisiatra, neurologo. /n";
 
----
----
-### **Approccio al paziente neurologico**
-- **Multidisciplinare/multiprofessionale**,
-- **Équipe dedicata**:
-  - **Fisioterapista**,
-  - **Logopedista**,
-  - **Terapista occupazionale**,
-  - **Tecnico ortopedico**,
-  - **Specialisti medici**:
-    - **Fisiatra**,
-    - **Neurologo**.
+else (prompt == "Neuroplasticità") {
+cout>> "La riabilitazione neuromotoria sfrutta una caratteristica del sistema nervoso centrale chiamata **neuroplasticità, /n";
+cout>> "Definizione: capacità del sistema nervoso centrale di riorganizzarsi autonomamente per ridistribuire le mansioni un tempo svolte dalle parti danneggiate, /n";
+cout>> "Processi biologici principali: sprouting, neoformazione di sinapsi. /n";
+}
 
----
----
-### **Neuroplasticità**
-- La riabilitazione neuromotoria sfrutta una **caratteristica del sistema nervoso centrale** chiamata **neuroplasticità**,
-- **Definizione**: capacità del **sistema nervoso centrale** di **riorganizzarsi autonomamente** per **ridistribuire le mansioni** un tempo svolte dalle **parti danneggiate**,
-- **Processi biologici principali**:
-  - **Sprouting**,
-  - **Neoformazione di sinapsi**.
+    if (!dragonAlive) {
 
+        cout << "\nТи врятував королівство!\n";
+    }
 
+    if (!playerAlive && dragonAlive) {
+
+        cout << "\nГру завершено.\n";
+    }
+
+    return 0;
+}
 
 
 
