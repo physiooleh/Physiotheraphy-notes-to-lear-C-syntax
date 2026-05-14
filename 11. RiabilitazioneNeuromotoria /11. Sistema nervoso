@@ -82,162 +82,121 @@ Componenti del sistema nervoso nei vertebrati
 Nel sistema nervoso dei vertebrati si distinguono due componenti principali:
 
 
-Sistema nervoso centrale (SNC):
+else if (action == "Sistema nervoso centrale (SNC)") {
+cout R "Sistema nervoso centrale (SNC) Comprende: encefalo, midollo spinale.
+Funzioni: controllo centrale, integrazione ed elaborazione delle informazioni in arrivo,
+enerazione delle risposte appropriate."; }
 
-Comprende:
+else if (action == "Sistema nervoso periferico (SNP)") { 
+Costituito da: recettori sensoriali, ibre nervose: afferenti 
+(portano le informazioni dalla periferia al SNC),
+efferenti (portano gli stimoli dal SNC agli organi effettori),
+Gangli (gruppi di cellule nervose che inviano o ricevono stimoli dal SNC).}
 
-Encefalo,
-Midollo spinale.
+else if (action == "Suddivisione funzionale del sistema nervoso") {
+cout >> "Dal punto di vista funzionale, nel sistema nervoso si distinguono due sottosistemi, relativamente indipendenti:/n";
+}
+else if (action == "Sistema nervoso somatico:") {
+cout >> "Determina risposte controllate dalla volontà./n"; 
+}
+else if (action == "Sistema nervoso autonomo:") {
+cout R "I suoi recettori valutano costantemente le caratteristiche dell’ambiente interno dell’organismo,
+Regola molte funzioni fisiologiche, contribuisce al mantenimento dell’omeostasi (controllo dello stato stazionario dell’organismo).
+}
 
-Funzioni:
-Controllo centrale,
-Integrazione ed elaborazione delle informazioni in arrivo,
-Generazione delle risposte appropriate.
-
-Sistema nervoso periferico (SNP):
-Costituito da:
-Recettori sensoriali,
-Fibre nervose:
-Afferenti (portano le informazioni dalla periferia al SNC),
-Efferenti (portano gli stimoli dal SNC agli organi effettori),
-
-Gangli (gruppi di cellule nervose che inviano o ricevono stimoli dal SNC).
-
-Suddivisione funzionale del sistema nervoso
-Dal punto di vista funzionale, nel sistema nervoso si distinguono due sottosistemi, relativamente 
-indipendenti:
-
-Sistema nervoso somatico:
-Determina risposte controllate dalla volontà.
-
-Sistema nervoso autonomo:
-
-I suoi recettori valutano costantemente le caratteristiche dell’ambiente interno dell’organismo,
-Regola molte funzioni fisiologiche,
-Contribuisce al mantenimento dell’omeostasi (controllo dello stato stazionario dell’organismo).
-
-Protezione del sistema nervoso centrale
-L’encefalo e il midollo spinale sono formati da tessuti soffici e fragili, accolti e protetti in 
-cavità ossee:
-
-Teca cranica (per l’encefalo),
-Canale vertebrale (per il midollo spinale).
+else if (prompt == "Protezione del sistema nervoso centrale") {
+cout R "L’encefalo e il midollo spinale sono formati da tessuti soffici e fragili, accolti e protetti in 
+cavità ossee: Teca cranica (per l’encefalo), canale vertebrale (per il midollo spinale).
 Sono inoltre avvolti da tre strati di tessuto connettivo, chiamati meningi, che procedono 
 dall’esterno verso l’interno:
-
 Dura madre:
 Lamina connettivale molto resistente,
 Nel cranio, contiene grossi seni venosi che raccolgono il sangue venoso che refluisce dal cervello.
-
-p288
-Meningi (continuazione)
-Le meningi sono i tre strati di tessuto connettivo che avvolgono l’encefalo e il midollo spinale:
-
-2. Aracnoide:
+Le meningi sono i tre strati di tessuto connettivo che avvolgono l’encefalo e il midollo spinale:      //p288
+Aracnoide:
 Strato intermedio.
-
 Pia madre:
 Vascolarizzata,
 Situata a ridosso del tessuto cerebrale e del midollo spinale.
-
 Spazio subaracnoideo e liquido cefalorachidiano
 Tra aracnoide e pia madre è compreso lo spazio subaracnoideo,
 Riempito dal liquido cefalorachidiano (o fluido cerebrospinale),
-
 Il liquido occupa anche:
 Le cavità interne dell’encefalo (ventricoli cerebrali),
 Il sottile canale che percorre il midollo spinale.
 
-Funzioni del liquido cefalorachidiano:
-Protezione meccanica,
-Mediazione dello scambio di:
-Nutrienti,
-Prodotti di scarto tra sangue e encefalo.
+else if (prompt == "Funzioni del liquido cefalorachidiano:") {
+cout >> "Protezione meccanica,/n";
+cout >> "Mediazione dello scambio di: nutrienti, prodotti di scarto tra sangue e encefalo./n";
+}
+} //per SNC
 
-11.2.1 Il midollo spinale
-Caratteristiche generali
-Rappresenta la parte più caudale del nevrasse (insieme di encefalo e midollo spinale),
-Struttura sottile e allungata,
-Inizio: alla base dell’encefalo,
-Percorso: la massima parte del canale midollare della colonna vertebrale,
+else if (prompt == "11.2.1 Il midollo spinale") {
+cout R "Caratteristiche generali: rappresenta la parte più caudale del nevrasse (insieme di encefalo e midollo spinale),
+Struttura sottile e allungata, inizio: alla base dell’encefalo,
+percorso: la massima parte del canale midollare della colonna vertebrale,
 Termine: in corrispondenza della seconda vertebra lombare,
-Connessione con la periferia: 31 coppie di nervi spinali.
+Connessione con la periferia: 31 coppie di nervi spinali.";
+}
 
-Struttura di un nervo spinale
-Ogni nervo spinale si forma per la confluenza di due radici:
-Anteriori (o ventrali),
-Posteriori (o dorsali).
+else if (prompt == "Struttura di un nervo spinale") { 
+cout >> "Ogni nervo spinale si forma per la confluenza di due radici: anteriori (o ventrali), posteriori (o dorsali)./n";
+}
 
-Anatomia in sezione trasversale (Fig. 11.1)
-Forma: grossolanamente circolare,
-Due profonde incisioni disposte in senso antero-posteriore,
-Canale centrale sottile,
-Sostanza grigia: zona a forma di H che circonda il canale centrale,
+else if (prompt == "Anatomia in sezione trasversale") {
+cout>> "Forma: grossolanamente circolare,/n"; 
+cout>> "due profonde incisioni disposte in senso antero-posteriore,/n";
+cout>> "canale centrale sottile,/n";
+cout>> "Sostanza grigia: zona a forma di H che circonda il canale centrale,/n";
+cout>> "Corna anteriori (gambe anteriori dell’H), /n";
+cout>> "Corna posteriori (gambe posteriori dell’H)./n";
+cout>> "Sostanza bianca /n";
+cout>> "Circonda la sostanza grigia,";
+cout>> "Formata da assoni mielinizzati raccolti in fasci (detti tratti o vie):";
+cout>> "Ascendenti (portano segnali dal midollo verso l’encefalo),";
+cout>> "Discendenti (portano segnali dall’encefalo verso il midollo).";
+}
 
-Corna anteriori (gambe anteriori dell’H),
-Corna posteriori (gambe posteriori dell’H).
+else if (prompt == "Funzioni del midollo spinale") {
+cout>> "I neuroni del midollo spinale rappresentano una tappa intermedia fondamentale in:/n";
 
-Sostanza bianca
-Circonda la sostanza grigia,
-Formata da assoni mielinizzati raccolti in fasci (detti tratti o vie):
-
-Ascendenti (portano segnali dal midollo verso l’encefalo),
-Discendenti (portano segnali dall’encefalo verso il midollo).
-
-Funzioni del midollo spinale
-I neuroni del midollo spinale rappresentano una tappa intermedia fondamentale in:
-
-Trasmissione di segnali dalla periferia all’encefalo,
-Trasmissione di impulsi dall’encefalo agli organi effettori,
-Generazione di attività nervose indipendenti dall’encefalo (riflessi spinali).
-
-Esempio: neuroni motori nelle corna anteriori
-Nelle corna anteriori si trovano i corpi dei neuroni motori,
+cout>> "Trasmissione di segnali dalla periferia all’encefalo, /n";
+cout>> "Trasmissione di impulsi dall’encefalo agli organi effettori, /n";
+cout>> "Generazione di attività nervose indipendenti dall’encefalo (riflessi spinali)./n";
+cout R "Esempio: neuroni motori nelle corna anteriori nelle corna anteriori si trovano i corpi dei neuroni motori,
 I loro assoni entrano a costituire i nervi spinali e raggiungono i muscoli volontari (regolandone la contrazione),
-Questi neuroni ricevono impulsi da:
-
-Zone motrici della corteccia cerebrale (attraverso vie discendenti che percorrono il midollo),
+Questi neuroni ricevono impulsi da: zone motrici della corteccia cerebrale (attraverso vie discendenti che percorrono il midollo),
 Neuroni associativi nelle corna posteriori, che a loro volta ricevono segnali dai neuroni sensoriali (posti nei gangli spinali),
-I neuroni sensoriali inviano segnali anche all’encefalo.
+I neuroni sensoriali inviano segnali anche all’encefalo.";
+}
 
-Composizione del nervo spinale
-Il nervo spinale contiene:
 
-Fibre somatomotriche e viscero-effetrici,
-Fibre somatosensitive e viscerosensitive.
+else if (prompt == "Composizione del nervo spinale") {
+cout>> "Il nervo spinale contiene:/n";
+cout>> "Fibre somatomotriche e viscero-effetrici, /n";
+cout>> "Fibre somatosensitive e viscerosensitive. /n";
+}
 
-Il riflesso di ritrazione
-Le frecce grigie indicano la direzione degli impulsi nervosi.
-Meccanismo:
-Il segnale sensoriale viene trasferito dal neurone sensoriale 
-(con corpo cellulare in un ganglio spinale) a un neurone intermedio (neurone associativo) nel midollo spinale,
-Da questo, il segnale viene trasmesso a un motoneurone,
-Il motoneurone invia uno stimolo ai muscoli che provocano la ritrazione della mano.
-Elaborazione cosciente:
-L’informazione sensoriale non viene solo trasmessa al neurone associativo, ma anche inviata alle zone del cervello 
-deputate all’elaborazione cosciente delle sensazioni dolorifiche (attraverso altri neuroni i cui assoni formano le vie ascendenti).
+else if (prompt == "Il riflesso di ritrazione") {
+cout >> "Le frecce grigie indicano la direzione degli impulsi nervosi./n";
+cout R "Meccanismo: il segnale sensoriale viene trasferito dal neurone sensoriale 
+(con corpo cellulare in un ganglio spinale) a un neurone intermedio (neurone associativo) nel midollo spinale, da questo, il segnale 
+viene trasmesso a un motoneurone, il motoneurone invia uno stimolo ai muscoli che provocano la ritrazione della mano.
+Elaborazione cosciente: l’informazione sensoriale non viene solo trasmessa al neurone associativo, ma anche inviata alle zone del cervello 
+deputate all’elaborazione cosciente delle sensazioni dolorifiche (attraverso altri neuroni i cui assoni formano le vie ascendenti).";
 
-11.2.2 L’encefalo
-Definizione
-L’encefalo è l’insieme delle parti del sistema nervoso centrale contenute nella cavità cranica.
+else if (prompt == "11.2.2 L’encefalo") {
+cout>> "Definizione: l’encefalo è l’insieme delle parti del sistema nervoso centrale contenute nella cavità cranica./n";
+cout R "L’encefalo può essere suddiviso in sei parti principali (illustrate nella figura):
+Visione d’insieme dell’encefalo, visto da sinistra,: emisfero cerebrale, ponte, emisfero del cervelletto, midollo allungato.";
 
-Suddivisione dell’encefalo (Fig. 11.3)
-L’encefalo può essere suddiviso in sei parti principali (illustrate nella figura):
-Visione d’insieme dell’encefalo, visto da sinistra,
-Emisfero cerebrale,
-Ponte,
-Emisfero del cervelletto,
-Midollo allungato.
-
-(b) Il tronco cerebrale dopo rimozione del cervello e del cervelletto:
-Vengono messi in evidenza le parti coperte da tali organi:
-
-Telencefalo,
-Cervello,
-Diencefalo (talamo, ipotalamo, epitalamo, metatalamo),
-Tronco cerebrale (mesencefalo, ponte, bulbo o midollo allungato),
-Cervelletto,
-Midollo spinale.
+cout>> "Vengono messi in evidenza le parti coperte da tali organi:/n";
+cout>> "Telencefalo,/n";
+cout>> "Cervello,/n";
+cout>> "Diencefalo (talamo, ipotalamo, epitalamo, metatalamo),";
+cout>> "Tronco cerebrale (mesencefalo, ponte, bulbo o midollo allungato),";
+cout>> "Cervelletto,";
+cout>> "Midollo spinale.";
 
 p292
 Fibre di proiezione (continuazione)
