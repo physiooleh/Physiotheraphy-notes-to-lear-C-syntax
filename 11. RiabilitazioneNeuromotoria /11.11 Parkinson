@@ -70,12 +70,10 @@ questa sensazione è avvertita dal paziente, ma non è visibile.
 Rigidità
 Aumento involontario del tono muscolare, può essere il primo sintomo della malattia.
 Spesso esordisce da un solo lato del corpo.
-Può manifestarsi a livello di:
-arti,
-collo,
-tronco.
-Segno clinico: la riduzione dell’oscillazione pendolare degli arti superiori durante 
-il cammino, associata a lentezza dei movimenti.
+Può manifestarsi a livello di: arti, collo, tronco.
+hashTable[Segno clinico] = 
+cout"la riduzione dell’oscillazione pendolare degli 
+arti superiori durante il cammino, associata a lentezza dei movimenti.";
 Caratteristiche della rigidità: Extrapiramidale o plastica (Interessa sia i muscoli 
 agonisti che gli antagonisti, la resistenza opposta alla mobilizzazione passiva è 
 costante, non si osserva il ritorno del segmento disteso alla posizione di partenza).
@@ -299,129 +297,75 @@ Disordini da neurodegenerazione con accumulo cerebrale di ferro (NBIA),
 Tumori cerebrali,
 Disordini da alterato metabolismo del calcio.
 
-Ecco il testo originale estratto dal PDF **C336.pdf** (in italiano):
+//p 337
+hashTable[Stimolazione cerebrale profonda] = R "Metodica che non cura la malattia, 
+ma dimostra benefici in relazione a disturbi non altrimenti trattabili in modo 
+soddisfacente, come: tremore essenziale, distonia, dolore cronico, disturbo 
+ossessivo-compulsivo, depressione maggiore.
+Utilizzo attuale: per pazienti i cui sintomi non rispondono più adeguatamente ai 
+farmaci, oppure in caso di gravi effetti collaterali da farmaci.";
 
----
+hashTable[11.11.7 La riabilitazione] = R "Alla terapia farmacologica viene 
+costantemente e diffusamente affiancata la fisiokinesiterapia, fin dalle prime 
+manifestazioni cliniche della malattia, con l’obiettivo di: contrastare alcuni sintomi
+, prevenire i danni secondari.";
 
-**Capitolo 11 | Il sistema nervoso e la riabilitazione neuromotoria | 337**
+hashTable[Obiettivi della riabilitazione] = R "La malattia produce una 
+'dis-regolazione' del movimento, quindi la riabilitazione diventa un costante e 
+sistematico 'riallenamento' al movimento, con l’obiettivo di contrastare: lentezza, 
+scarsa fluidità, Mancanza di coordinazione.";
 
----
-### **Stimolazione cerebrale profonda**
-- **Metodica** che **non cura la malattia**, ma dimostra **benefici** in relazione a **disturbi non altrimenti trattabili** in modo soddisfacente, come:
-  - **Tremore essenziale**,
-  - **Distonia**,
-  - **Dolore cronico**,
-  - **Disturbo ossessivo-compulsivo**,
-  - **Depressione maggiore**.
+hashTable[Effetti della rigidità e del rallentamento motorio] = R "Modificazioni 
+della postura (atteggiamento in stazione eretta), alterazioni della deambulazione, 
+compromissione dell’equilibrio, ripercussioni sulla colonna vertebrale e sulle 
+articolazioni (che si 'fissano' in posizioni viziate).";
 
-- **Utilizzo attuale**:
-  - Per pazienti i cui **sintomi non rispondono più adeguatamente ai farmaci**,
-  - Oppure in caso di **gravi effetti collaterali** da farmaci.
+hashTable[Obiettivo degli esercizi] = cout R "correggere questi atteggiamenti e 
+prevenire l’insorgere di patologie dolorose a carico dei vari segmenti ossei.";
 
----
----
-## **11.11.7 La riabilitazione**
+hashTable[Tremore] = cout R "Ben poco è fattibile per contrastarlo direttamente,
+Benefici indiretti: miglioramento della performance fisica, il paziente acquista 
+maggiore sicurezza nel movimento, miglioramento del tono dell’umore, riduzione 
+dell’ansia.";
+hashTable[Programma riabilitativo] =  cout R "Gli esercizi proposti rappresentano una 
+sintesi di un programma riabilitativo più ampio, strutturato per essere eseguito 
+al proprio domicilio. Suddivisione degli esercizi in base agli obiettivi:";
 
-Alla **terapia farmacologica** viene **costantemente e diffusamente affiancata la fisiokinesiterapia**, **fin dalle prime manifestazioni cliniche** della malattia, con l’obiettivo di:
-- **Contrastare alcuni sintomi**,
-- **Prevenire i danni secondari**.
+hashTable[Esercizi di allungamento e mobilizzazione] = cout R "Prevenzione delle 
+retrazioni muscolotendinee a carico delle articolazioni e dell’insorgenza di patologie 
+dolorose ossee, correzione degli atteggiamenti posturali viziati.";
 
----
-### **Obiettivi della riabilitazione**
-La malattia produce una **"dis-regolazione" del movimento**, quindi la riabilitazione diventa un **costante e sistematico "riallenamento" al movimento**, con l’obiettivo di contrastare:
-- **Lentezza**,
-- **Scarsa fluidità**,
-- **Mancanza di coordinazione**.
+hashTable[Esercizi funzionali e aerobici (cardio)] = cout R "Miglioramento della 
+capacità di cambiare posizione (sdraiata, seduta, in piedi), esecuzione di gesti della 
+vita quotidiana (es. girarsi nel letto).";
 
----
-### **Effetti della rigidità e del rallentamento motorio**
-- **Modificazioni della postura** (atteggiamento in stazione eretta),
-- **Alterazioni della deambulazione**,
-- **Compromissione dell’equilibrio**,
-- **Ripercussioni sulla colonna vertebrale e sulle articolazioni** (che si "fissano" in posizioni viziate).
+hashTable[Esercizi di equilibrio] = cout<< "Prevenzione delle cadute./n";
 
-**Obiettivo degli esercizi**: **correggere questi atteggiamenti** e **prevenire l’insorgere di patologie dolorose** a carico dei vari segmenti ossei.
+hashTable[Esercizi di coordinazione] = cout>> "Miglioramento della fluidità e della 
+precisione del movimento./n";
 
----
-### **Tremore**
-- **Ben poco è fattibile** per contrastarlo direttamente,
-- **Benefici indiretti**: miglioramento della **performance fisica**,
-  - Il paziente acquista **maggiore sicurezza nel movimento**,
-  - Miglioramento del **tono dell’umore**,
-  - Riduzione dell’**ansia**.
-
----
----
-### **Programma riabilitativo**
-Gli esercizi proposti rappresentano una **sintesi di un programma riabilitativo più ampio**, strutturato per essere eseguito **al proprio domicilio**.
-
-**Suddivisione degli esercizi in base agli obiettivi**:
-
-1. **Esercizi di allungamento e mobilizzazione**:
-   - **Prevenzione delle retrazioni muscolotendinee** a carico delle articolazioni,
-   - **Prevenzione dell’insorgenza di patologie dolorose ossee**,
-   - **Correzione degli atteggiamenti posturali viziati**.
-
-2. **Esercizi funzionali e aerobici (cardio)**:
-   - Miglioramento della **capacità di cambiare posizione** (sdraiata, seduta, in piedi),
-   - Esecuzione di **gesti della vita quotidiana** (es. girarsi nel letto).
-
-3. **Esercizi di equilibrio**:
-   - **Prevenzione delle cadute**.
-
-4. **Esercizi di coordinazione**:
-   - Miglioramento della **fluidità** e della **precisione del movimento**.
-
-5. **Esercizi di potenziamento muscolare**:
-   - **Mantenimento del tono e del trofismo muscolare**,
-   - **Assistenza ai movimenti**,
-   - **Diminuzione dell’impatto negativo della rigidità muscolare**.
-
----
-### **Esempi di esercizi di potenziamento**
-- Spingere fino a **salire sulle dita dei piedi**,
-- **Squat modificati**,
-- **Alzarsi e sedersi ripetutamente su una sedia**.
-
----
-**Figura 11.21**: *Stimolazione cerebrale profonda*.
-
-
-Ecco il testo originale estratto dal PDF C338.pdf (in italiano):
-
-338 | Parte Seconda | Anatomia e fisiologia, metodologie e tecniche fisioterapiche
-
-Gli esercizi di potenziamento muscolare includono anche:
-
-Applicare pesi alle caviglie e ai polsi (a casa o durante una passeggiata),
-Push-up (flessioni),
-Push-up a muro.
-
+hashTable[Esercizi di potenziamento muscolare] = 
+cout>>"Mantenimento del tono e del trofismo muscolare,/n";
+cout>> "Assistenza ai movimenti,/n";
+cout>> "Diminuzione dell’impatto negativo della rigidità muscolare./n";
+cout R "Esempi di esercizi di potenziamento: spingere fino a salire sulle dita dei 
+piedi, squat modificati, alzarsi e sedersi ripetutamente su una sedia.
+Gli esercizi di potenziamento muscolare includono anche: //p338
+Applicare pesi alle caviglie e ai polsi (a casa o durante una passeggiata), 
+push-up (flessioni), push-up a muro.
 Benefici dell’esercizio fisico
-
 Non è una cura, ma può aiutare le persone affette da malattia di Parkinson:
-
 A livello muscolare: esercitare un maggiore controllo su tutti i distretti muscolari,
 Aumentando la forza nei muscoli deficitari,
 Migliorando l’estensibilità muscolare nel suo insieme,
 Facilitando il movimento nella sua globalità.
-
-
-L’innovazione nella riabilitazione: l’utilizzo della console Wii
-
+hashTable[L’innovazione nella riabilitazione] = R "l’utilizzo della console Wii
 Ultima frontiera riguardo all’attività motoria quotidiana,
-Miglioramenti consistenti e rilevanti della qualità della vita (sintomi motori e psichici) nei pazienti che effettuano un programma riabilitativo che preveda:
-Almeno tre volte a settimana il gioco a Wii Sports,
-Attività virtuali come:
-Tennis,
-Bowling,
-Pugilato,
-Altre attività sportive.
-";
-
+Miglioramenti consistenti e rilevanti della qualità della vita (sintomi motori e 
+psichici) nei pazienti che effettuano un programma riabilitativo che preveda:
+Almeno tre volte a settimana il gioco a Wii Sports, attività virtuali come: tennis, 
+bowling, pugilato, altre attività sportive.";
     hashTable[key] = value;
-
-    // Odczyt
     std::cout << "Klucz: " << key << "\n\n";
     std::cout << "Wartość:\n";
     std::cout << hashTable[key] << std::endl;
