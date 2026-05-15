@@ -545,9 +545,8 @@ Rami autonomi
 - Ricevono impulsi dal sistema nervoso centrale,
 - Li trasmettono, tramite i propri assoni, agli organi effettori.
 
-11.4 Il sistema nervoso somatico o volontario
-Composizione
-Il sistema nervoso somatico (o volontario) comprende:
+else if (prompt == "11.4 Il sistema nervoso somatico o volontario") 
+cout R "Composizione. Il sistema nervoso somatico (o volontario) comprende:
 1.Recettori: generano segnali sullo stato dell’ambiente esterno e sulle varie parti dell’organismo,
 2.Fibre nervose (che formano i nervi) dei neuroni sensoriali: lungo le quali gli impulsi viaggiano 
 dalla periferia verso il centro,
@@ -648,11 +647,8 @@ Funzione: controllano la motilità dei muscoli scheletrici.
 
 11.5.1 Il controllo dei movimenti volontari
 La corretta esecuzione dei movimenti volontari comporta diverse fasi e richiede l’intervento di diverse parti del sistema nervoso, le cui funzioni si integrano a vicenda:
-
 Fasi del controllo dei movimenti volontari
-
 Formulazione dell’intenzione:
-
 Esempio: intenzione di compiere un movimento (ad esempio, cucire con un ago),
 Aree coinvolte:
 
